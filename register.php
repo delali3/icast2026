@@ -36,6 +36,8 @@ if (empty($_SESSION['csrf_token'])) {
   <!-- Main Stylesheet File -->
   <link href="./css/style.css" rel="stylesheet">
   <link href="./css/unique-styles.css" rel="stylesheet">
+  <link href="./css/enhanced-speakers.css" rel="stylesheet">
+  <link href="./css/header-fix.css" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">

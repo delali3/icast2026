@@ -1,0 +1,28 @@
+/*--------------------------------------------------------------
+# Header Z-Index Fix
+--------------------------------------------------------------*/
+
+/* Ensure header stays above all content including notification */
+#header {
+  z-index: 1000 !important;
+}
+
+/* Adjust notification z-index to be below header */
+#notification {
+  z-index: 990 !important;
+}
+
+/* Ensure proper spacing for content with fixed header */
+body {
+  padding-top: 0;
+}
+
+/* Add top margin to intro section when notification is present */
+#intro {
+  margin-top: 0;
+}
+
+/* Fix any other z-index conflicts */
+.back-to-top {
+  z-index: 999;
+}

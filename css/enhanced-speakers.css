@@ -1,0 +1,198 @@
+/*--------------------------------------------------------------
+# Clean Speaker Section Design
+--------------------------------------------------------------*/
+
+/* Speaker Section Background - Simple and Clean */
+#speakers {
+  position: relative;
+  background: #ffffff;
+  padding: 60px 0;
+}
+
+/* Simple Speaker Section Header */
+#speakers .section-header h2 {
+  color: #003f7f;
+  font-weight: 600;
+}
+
+#speakers .section-header::after {
+  background: #003f7f;
+  width: 50px;
+  height: 3px;
+}
+
+/* Clean Speaker Cards Design */
+#speakers .speaker {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 63, 127, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  margin-bottom: 30px;
+  border: 1px solid rgba(0, 174, 239, 0.1);
+}
+
+/* Simple Top Border */
+#speakers .speaker::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #003f7f;
+}
+
+/* Subtle Hover Effect */
+#speakers .speaker:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 63, 127, 0.12);
+  border-color: rgba(0, 174, 239, 0.2);
+}
+
+/* Speaker Image Container - Clean and Simple */
+#speakers .speaker-image-container {
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+}
+
+#speakers .speaker img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+#speakers .speaker:hover img {
+  transform: scale(1.05);
+}
+
+/* Clean Speaker Information Area */
+#speakers .speaker .details {
+  padding: 24px 20px;
+  text-align: center;
+  position: relative;
+  background: #fff;
+}
+
+/* Simple Accent Line */
+#speakers .speaker .details::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 2px;
+  background: #00aeef;
+}
+
+/* Speaker Name - Clean Typography */
+#speakers .speaker .details h3 {
+  margin: 16px 0 8px;
+  color: #003f7f;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+/* Speaker Position/Title - Clean and Simple */
+#speakers .speaker .details p {
+  color: #6c757d;
+  font-weight: 500;
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Simple Role Badge */
+#speakers .speaker .role-badge {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #003f7f;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+#speakers .speaker:hover .role-badge {
+  opacity: 1;
+  bottom: -8px;
+}
+
+/* Remove Floating Animation - Keep it Simple */
+.floating-element {
+  /* No animation - clean and static */
+}
+
+/* Ensure 4-Column Layout */
+#speakers .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+#speakers .col-lg-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+/* Remove Individual Color Variations - Keep Consistent */
+#speakers .speaker:nth-child(n) {
+  /* All speakers use the same colors for consistency */
+}
+
+/* Clean Mobile Responsive */
+@media (max-width: 992px) {
+  #speakers .col-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #speakers .col-lg-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #speakers .speaker-image-container {
+    height: 250px;
+  }
+
+  #speakers .speaker .details {
+    padding: 20px 16px;
+  }
+
+  #speakers .speaker .details h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  #speakers .speaker-image-container {
+    height: 220px;
+  }
+
+  #speakers .speaker .details h3 {
+    font-size: 16px;
+  }
+
+  #speakers .speaker .details p {
+    font-size: 13px;
+  }
+}
