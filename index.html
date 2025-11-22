@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="IEEE, ICAST 2026, Academic City University, ICAST Conference 2026, International Conference, Advanced Science and Technology, IEEE Ghana Section, research, innovations, Academic City University, ICAST 2026">
-  <meta name="description" content="Join the IEEE ICAST 2026 in Ghana, the premier International Conference on Advanced Science and Technology. Hosted by the IEEE Ghana Section, this event brings together global researchers and innovators at Academic City University to explore the latest advancements in science and technology. Don't miss out on this pivotal conference for groundbreaking research and innovations in Ghana.">
+  <meta name="keywords" content="IEEE, ICAST 2026, Academic City University, ICAST Conference 2026, International Conference, Advanced Science and Technology, IEEE Ghana Section, research, innovations">
+  <meta name="description" content="Join the IEEE ICAST 2026 in Ghana, the premier International Conference on Advanced Science and Technology. Hosted by the IEEE Ghana Section at Academic City University.">
 
   <title>IEEE ICAST 2026 - Academic City University | International Conference on Advanced Science and Technology</title>
 
@@ -12,18 +12,21 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./images/logo/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/logo/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./images/logo/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="./images/logo/favicon_io/site.webmanifest">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Google tag (gtag.js) -->
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./css/modern-styles.css">
+  <link rel="stylesheet" href="./css/hero-enhanced.css">
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8VLYL6BD84"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -31,1100 +34,911 @@
     gtag('js', new Date());
     gtag('config', 'G-8VLYL6BD84');
   </script>
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'ieee-blue': '#003f7f',
-            'ieee-light-blue': '#00aeef',
-          },
-          fontFamily: {
-            'sans': ['Inter', 'sans-serif'],
-            'display': ['Poppins', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
-    /* Flat Modern Design */
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-
-    .hero-background {
-      background: linear-gradient(135deg, rgba(0, 63, 127, 0.92) 0%, rgba(0, 174, 239, 0.88) 100%),
-                  url('./images/intro-bg.jpg') center/cover no-repeat fixed;
-    }
-
-    .flat-card {
-      transition: all 0.2s ease;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-    }
-
-    .flat-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 12px rgba(0, 63, 127, 0.1);
-    }
-
-    .gradient-text {
-      background: linear-gradient(135deg, #003f7f 0%, #00aeef 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    /* Smooth scroll */
-    html {
-      scroll-behavior: smooth;
-    }
-
-    /* Pulse animation */
-    @keyframes pulse-ring {
-      0% {
-        transform: scale(1);
-        opacity: 1;
-      }
-      100% {
-        transform: scale(1.2);
-        opacity: 0;
-      }
-    }
-
-    .pulse-button::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      background: inherit;
-      animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-      z-index: -1;
-    }
-
-    .pulse-button {
-      position: relative;
-    }
-  </style>
 </head>
-<body class="antialiased text-gray-900 bg-white">
+<body>
 
-  <!-- Notification Banner -->
-  <div class="bg-gradient-to-r from-ieee-blue to-ieee-light-blue text-white py-2.5 px-4 text-center text-sm md:text-base">
-    <i class="fas fa-bullhorn mr-2"></i>
-    New! Check out the <a href="doctoral-consortium.html" class="underline font-semibold hover:text-gray-100">Doctoral Consortium</a> page for our event on October 23, 2026!
+  <!-- Floating Navigation -->
+  <nav id="main-nav" class="nav-container">
+    <div class="nav-brand">
+      <a href="index.html">
+        <span class="brand-text">ICAST</span>
+        <span class="brand-year">2026</span>
+      </a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#dates" class="nav-link">Key Dates</a>
+      <a href="#topics" class="nav-link">Topics</a>
+      <a href="#submission" class="nav-link">Submission</a>
+      <a href="#speakers" class="nav-link">Speakers</a>
+      <a href="#venue" class="nav-link">Venue</a>
+      <a href="committee.html" class="nav-link">Committees</a>
+      <a href="workshop.html" class="nav-link">Workshop</a>
+      <a href="doctoral-consortium.html" class="nav-link">Doctoral</a>
+      <a href="./register.php" class="nav-link-btn">Register</a>
+    </div>
+  </nav>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="announcement-content">
+      <i class="fas fa-bullhorn"></i>
+      <span>New! <a href="doctoral-consortium.html">Doctoral Consortium</a> event on October 23, 2026 - Learn More</span>
+    </div>
   </div>
 
-  <!-- Header Navigation - Ultra Flat -->
-  <header class="sticky top-0 z-50 bg-white border-b border-gray-100">
-    <nav class="container mx-auto px-4 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <!-- Logo -->
-        <div class="flex-shrink-0">
-          <a href="index.html" class="text-2xl lg:text-3xl font-extrabold tracking-tight">
-            <span class="text-ieee-blue">I</span><span class="text-ieee-light-blue">CAST</span><span class="text-ieee-blue">2026</span>
-          </a>
-        </div>
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <!-- Animated Background -->
+    <div class="hero-background">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+      </div>
+    </div>
 
-        <!-- Desktop Menu -->
-        <div class="hidden lg:flex items-center gap-1">
-          <a href="index.html" class="px-4 py-2 text-sm font-semibold text-ieee-blue bg-blue-50 rounded-md">Home</a>
-          <a href="committee.html" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-ieee-blue hover:bg-gray-50 rounded-md transition">Committees</a>
-          <a href="workshop.html" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-ieee-blue hover:bg-gray-50 rounded-md transition">Workshop</a>
-          <a href="doctoral-consortium.html" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-ieee-blue hover:bg-gray-50 rounded-md transition">Doctoral Consortium</a>
-          <a href="register.php" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-ieee-blue hover:bg-gray-50 rounded-md transition">Registration</a>
-          <a href="#call-for-paper" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-ieee-blue hover:bg-gray-50 rounded-md transition">Call for Papers</a>
-          <a href="#submit-paper" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-ieee-blue hover:bg-gray-50 rounded-md transition">Submission</a>
-          <a href="#sponsors" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-ieee-blue hover:bg-gray-50 rounded-md transition">Sponsors</a>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-btn" class="lg:hidden p-2 hover:bg-gray-50 rounded-md" onclick="toggleMobileMenu()">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <!-- Top Badge -->
+      <div class="hero-badge" data-aos="fade-down">
+        <span class="badge-dot"></span>
+        <span>11th Edition • IEEE Ghana Section</span>
+        <span class="badge-dot"></span>
       </div>
 
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden lg:hidden pb-4 space-y-1">
-        <a href="index.html" class="block px-4 py-2 text-sm font-semibold text-ieee-blue bg-blue-50 rounded-md">Home</a>
-        <a href="committee.html" class="block px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-md">Committees</a>
-        <a href="workshop.html" class="block px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-md">Workshop</a>
-        <a href="doctoral-consortium.html" class="block px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-md">Doctoral Consortium</a>
-        <a href="register.php" class="block px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-md">Registration</a>
-        <a href="#call-for-paper" class="block px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-md">Call for Papers</a>
-        <a href="#submit-paper" class="block px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-md">Submission</a>
-        <a href="#sponsors" class="block px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-md">Sponsors</a>
+      <!-- Main Title with Animation -->
+      <div class="hero-title-wrapper">
+        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+          <span class="title-main">ICAST</span>
+          <span class="title-year">2026</span>
+        </h1>
+        <div class="title-underline" data-aos="scale-x" data-aos-delay="300"></div>
       </div>
-    </nav>
-  </header>
 
-  <!-- Hero Section with Background Image -->
-  <section class="relative min-h-screen flex items-center justify-center hero-background">
-    <div class="relative z-10 container mx-auto px-4 py-20 text-center text-white">
-      <div class="max-w-5xl mx-auto space-y-8">
-        <!-- Badge -->
-        <div class="inline-flex items-center gap-2 px-4 py-2 bg-white bg-opacity-10 backdrop-blur-sm rounded-full text-sm font-medium">
-          <span class="w-2 h-2 bg-ieee-light-blue rounded-full animate-pulse"></span>
-          IEEE Ghana Section 2026
-        </div>
+      <!-- Subtitle -->
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+        International Conference on Adaptive Science & Technology
+      </p>
 
-        <!-- Main Title -->
-        <div class="space-y-6">
-          <h1 class="text-6xl md:text-7xl lg:text-8xl font-black font-display tracking-tight leading-none">
-            ICAST 2026
-          </h1>
-          <div class="h-1.5 w-24 bg-ieee-light-blue mx-auto rounded-full"></div>
-        </div>
-
-        <!-- Subtitle -->
-        <p class="text-xl md:text-2xl lg:text-3xl font-light max-w-3xl mx-auto leading-relaxed">
-          International Conference on<br class="hidden sm:block">
-          Adaptive Science & Technology
-        </p>
-
-        <!-- Event Details -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-10 text-lg pt-4">
-          <div class="flex items-center gap-2">
-            <i class="fas fa-calendar-alt text-ieee-light-blue"></i>
-            <span>24 - 26 October 2026</span>
+      <!-- Countdown Timer -->
+      <div class="countdown-container" data-aos="fade-up" data-aos-delay="300">
+        <div class="countdown-label">Conference Starts In</div>
+        <div class="countdown-timer" id="countdown">
+          <div class="countdown-item">
+            <div class="countdown-number" id="days">000</div>
+            <div class="countdown-text">Days</div>
           </div>
-          <div class="hidden sm:block w-px h-6 bg-white opacity-30"></div>
-          <div class="flex items-center gap-2">
-            <i class="fas fa-map-marker-alt text-ieee-light-blue"></i>
-            <span>Academic City University, Ghana</span>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="hours">00</div>
+            <div class="countdown-text">Hours</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="minutes">00</div>
+            <div class="countdown-text">Minutes</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="seconds">00</div>
+            <div class="countdown-text">Seconds</div>
           </div>
         </div>
+      </div>
 
-        <!-- CTA Buttons -->
-        <div class="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-          <a href="#about" class="pulse-button inline-flex items-center justify-center gap-2 px-8 py-4 bg-ieee-light-blue text-white rounded-lg font-semibold hover:bg-opacity-90 transition">
-            <span>Learn More</span>
-            <i class="fas fa-arrow-right"></i>
-          </a>
-          <a href="#submit-paper" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-ieee-blue rounded-lg font-semibold hover:bg-gray-100 transition">
-            <span>Submit Paper</span>
-            <i class="fas fa-file-upload"></i>
-          </a>
+      <!-- Event Details -->
+      <div class="hero-details" data-aos="fade-up" data-aos-delay="400">
+        <div class="detail-item">
+          <div class="detail-icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="detail-content">
+            <span class="detail-label">Date</span>
+            <span class="detail-value">24-26 October 2026</span>
+          </div>
         </div>
+        <div class="detail-divider"></div>
+        <div class="detail-item">
+          <div class="detail-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="detail-content">
+            <span class="detail-label">Venue</span>
+            <span class="detail-value">Academic City University</span>
+          </div>
+        </div>
+        <div class="detail-divider"></div>
+        <div class="detail-item">
+          <div class="detail-icon">
+            <i class="fas fa-globe-africa"></i>
+          </div>
+          <div class="detail-content">
+            <span class="detail-label">Location</span>
+            <span class="detail-value">Accra, Ghana</span>
+          </div>
+        </div>
+      </div>
 
-        <!-- Quick Stats - Flat Cards -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-12 max-w-4xl mx-auto">
-          <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 border border-white border-opacity-20">
-            <div class="text-4xl md:text-5xl font-black text-ieee-light-blue mb-1">11th</div>
-            <div class="text-sm opacity-90">Conference</div>
+      <!-- CTA Buttons -->
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+        <a href="#submission" class="btn-primary btn-glow">
+          <i class="fas fa-paper-plane"></i>
+          <span>Submit Your Paper</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#about" class="btn-secondary">
+          <i class="fas fa-info-circle"></i>
+          <span>Learn More</span>
+        </a>
+        <a href="./register.php" class="btn-tertiary">
+          <i class="fas fa-user-plus"></i>
+          <span>Register Now</span>
+        </a>
+      </div>
+
+      <!-- Key Highlights -->
+      <div class="hero-highlights" data-aos="fade-up" data-aos-delay="600">
+        <div class="highlight-item">
+          <div class="highlight-icon">
+            <i class="fas fa-award"></i>
           </div>
-          <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 border border-white border-opacity-20">
-            <div class="text-4xl md:text-5xl font-black text-ieee-light-blue mb-1">3</div>
-            <div class="text-sm opacity-90">Days</div>
+          <div class="highlight-text">
+            <strong>IEEE Indexed</strong>
+            <span>Published in IEEE Xplore</span>
           </div>
-          <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 border border-white border-opacity-20">
-            <div class="text-4xl md:text-5xl font-black text-ieee-light-blue mb-1">50+</div>
-            <div class="text-sm opacity-90">Speakers</div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">
+            <i class="fas fa-graduation-cap"></i>
           </div>
-          <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 border border-white border-opacity-20">
-            <div class="text-4xl md:text-5xl font-black text-ieee-light-blue mb-1">12</div>
-            <div class="text-sm opacity-90">Workshops</div>
+          <div class="highlight-text">
+            <strong>Double-Blind Review</strong>
+            <span>Rigorous peer review process</span>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <div class="highlight-text">
+            <strong>International</strong>
+            <span>Global participation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="700">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="stat-info">
+            <div class="stat-number" data-count="11">0</div>
+            <div class="stat-label">Conference Editions</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-calendar-week"></i>
+          </div>
+          <div class="stat-info">
+            <div class="stat-number" data-count="3">0</div>
+            <div class="stat-label">Days of Innovation</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="stat-info">
+            <div class="stat-number" data-count="50">0</div>
+            <div class="stat-label">Expert Speakers</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+          <div class="stat-info">
+            <div class="stat-number" data-count="12">0</div>
+            <div class="stat-label">Technical Workshops</div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Scroll Indicator -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-      <a href="#about" class="flex flex-col items-center gap-2 text-white opacity-75 hover:opacity-100 transition">
-        <span class="text-xs uppercase tracking-wider">Scroll</span>
-        <div class="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2">
-          <div class="w-1 h-3 bg-white rounded-full animate-bounce"></div>
-        </div>
-      </a>
+    <div class="scroll-indicator" data-aos="fade" data-aos-delay="1000">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow">
+        <i class="fas fa-chevron-down"></i>
+      </div>
     </div>
   </section>
 
-  <main>
-    <!-- About Section - Ultra Flat Design -->
-    <section id="about" class="py-20 bg-white">
-      <div class="container mx-auto px-4 lg:px-8">
-        <div class="max-w-6xl mx-auto">
-          <div class="grid lg:grid-cols-3 gap-10">
-            <div class="lg:col-span-2">
-              <h2 class="text-4xl lg:text-5xl font-bold mb-6 gradient-text">About The Event</h2>
-              <p class="text-lg text-gray-600 leading-relaxed">
-                IEEE ICAST 2026 is accepting submission for the 11th ICAST. This is sponsored by the IEEE Ghana Section.
-              </p>
-            </div>
-
-            <div class="space-y-4">
-              <div class="flat-card bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl">
-                <div class="flex items-center gap-3 mb-2">
-                  <div class="w-10 h-10 bg-ieee-blue rounded-lg flex items-center justify-center">
-                    <i class="fas fa-map-marker-alt text-white"></i>
-                  </div>
-                  <h3 class="text-lg font-bold text-ieee-blue">Where</h3>
-                </div>
-                <p class="text-gray-700">Academic City University</p>
-              </div>
-
-              <div class="flat-card bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl">
-                <div class="flex items-center gap-3 mb-2">
-                  <div class="w-10 h-10 bg-ieee-blue rounded-lg flex items-center justify-center">
-                    <i class="fas fa-calendar-alt text-white"></i>
-                  </div>
-                  <h3 class="text-lg font-bold text-ieee-blue">When</h3>
-                </div>
-                <p class="text-gray-700">Monday to Wednesday<br>24-26 October 2026</p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Conference Overview</span>
+        <h2 class="section-title">About ICAST 2026</h2>
       </div>
-    </section>
 
-    <!-- Background & Introduction Section -->
-    <section id="background" class="py-20 bg-gray-50">
-      <div class="container mx-auto px-4 lg:px-8">
-        <div class="max-w-4xl mx-auto">
-          <div class="text-center mb-12">
-            <h2 class="text-4xl lg:text-5xl font-bold gradient-text">Background & Introduction</h2>
-            <p class="text-gray-600 mt-3">About the IEEE ICAST Conference</p>
-          </div>
-
-          <div class="flat-card bg-white p-8 rounded-xl">
-            <div class="prose prose-lg max-w-none text-gray-700">
-              <p class="text-justify leading-relaxed mb-6">
-                The IEEE International Conference on Adaptive Science & Technology is a double blind and an annually organised conference in the areas of Information Technology and Computer Science: Communication, Networking and Broadcast Technologies, Components, Circuits, Devices and Systems, Computing and Processing, Fields, Waves and Electromagnetics, Power, Energy and Industry Applications, Robotics and Control Systems. The proceedings of ICAST conferences are indexed in <strong class="text-ieee-blue">IEEE Xplore</strong> and <strong class="text-ieee-blue">Scopus</strong> etc.
-              </p>
-
-              <p class="text-justify leading-relaxed mb-8">
-                Past Publications of <a href="https://www.ieee.org/publications/rights/multi-sub-guidelines-intro.html" target="_blank" class="text-ieee-blue hover:underline font-semibold">ICAST in IEEE Xplore.</a>
-              </p>
-
-              <div class="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg border-l-4 border-green-500">
-                <h3 class="text-xl font-bold text-green-700 mb-3">How to submit your paper via IEEE PDF eXpress:</h3>
-                <a href="https://ieee-pdf-express.org/External/UsingIEEEPDFeXpress" class="inline-flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition font-semibold">
-                  <i class="fas fa-external-link-alt"></i>
-                  Click here
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Important Dates Section -->
-    <section id="important-dates" class="py-20 bg-white">
-      <div class="container mx-auto px-4 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl lg:text-5xl font-bold gradient-text">Important Dates</h2>
-          <p class="text-gray-600 mt-3">Key deadlines for paper submission and registration</p>
-        </div>
-
-        <div class="max-w-4xl mx-auto">
-          <div class="grid md:grid-cols-2 gap-6">
-            <div class="flat-card bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl">
-              <div class="flex items-center gap-4 mb-4">
-                <div class="w-12 h-12 bg-ieee-blue rounded-lg flex items-center justify-center">
-                  <i class="fas fa-file-upload text-white text-xl"></i>
-                </div>
-                <div>
-                  <h3 class="text-xl font-bold text-ieee-blue">Paper Submission</h3>
-                  <p class="text-gray-600">Deadline for full papers</p>
-                </div>
-              </div>
-              <p class="text-2xl font-black text-ieee-light-blue">15th August, 2026</p>
-            </div>
-
-            <div class="flat-card bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl">
-              <div class="flex items-center gap-4 mb-4">
-                <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
-                  <i class="fas fa-check-circle text-white text-xl"></i>
-                </div>
-                <div>
-                  <h3 class="text-xl font-bold text-green-600">Notification of Acceptance</h3>
-                  <p class="text-gray-600">Authors will be notified</p>
-                </div>
-              </div>
-              <p class="text-2xl font-black text-green-500">1st September, 2026</p>
-            </div>
-
-            <div class="flat-card bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl">
-              <div class="flex items-center gap-4 mb-4">
-                <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center">
-                  <i class="fas fa-edit text-white text-xl"></i>
-                </div>
-                <div>
-                  <h3 class="text-xl font-bold text-purple-600">Camera Ready Copy</h3>
-                  <p class="text-gray-600">Final paper submission</p>
-                </div>
-              </div>
-              <p class="text-2xl font-black text-purple-500">24th September, 2026</p>
-            </div>
-
-            <div class="flat-card bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-xl">
-              <div class="flex items-center gap-4 mb-4">
-                <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center">
-                  <i class="fas fa-calendar-check text-white text-xl"></i>
-                </div>
-                <div>
-                  <h3 class="text-xl font-bold text-orange-600">Conference Dates</h3>
-                  <p class="text-gray-600">Academic City University, Ghana</p>
-                </div>
-              </div>
-              <p class="text-2xl font-black text-orange-500">24-26 October, 2026</p>
-            </div>
-          </div>
-
-          <div class="mt-12 bg-gray-50 rounded-xl p-8">
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">Registration Deadlines</h3>
-            <div class="grid md:grid-cols-2 gap-6">
-              <div class="flex items-center gap-4">
-                <i class="fas fa-clock text-ieee-blue text-2xl"></i>
-                <div>
-                  <p class="font-semibold text-gray-900">Early Bird Registration</p>
-                  <p class="text-gray-600">1st - 30th September 2026</p>
-                </div>
-              </div>
-              <div class="flex items-center gap-4">
-                <i class="fas fa-clock text-ieee-light-blue text-2xl"></i>
-                <div>
-                  <p class="font-semibold text-gray-900">Late / On-site Registration</p>
-                  <p class="text-gray-600">1st - 25th October 2026</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call for Papers Section -->
-    <section id="call-for-paper" class="py-20 bg-gray-50">
-      <div class="container mx-auto px-4 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl lg:text-5xl font-bold gradient-text">Call for Papers</h2>
-          <p class="text-gray-600 mt-3">Submit your research in these exciting areas</p>
-        </div>
-
-        <div class="max-w-7xl mx-auto">
-          <div class="grid lg:grid-cols-3 gap-8">
-            <!-- Applied Computing -->
-            <div class="flat-card bg-white p-8 rounded-xl">
-              <div class="flex items-center gap-3 mb-6">
-                <div class="w-12 h-12 bg-ieee-blue rounded-lg flex items-center justify-center">
-                  <i class="fas fa-laptop-code text-white text-xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-ieee-blue">Applied Computing</h3>
-              </div>
-              <ul class="space-y-2 text-gray-700">
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-ieee-light-blue mt-1"></i>
-                  <span>ICTs in Industrialization & Manufacturing</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-ieee-light-blue mt-1"></i>
-                  <span>ICT applications in Energy (Renewable, Oil, Hydro, Clean Coal & Nuclear)</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-ieee-light-blue mt-1"></i>
-                  <span>Internet applications</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-ieee-light-blue mt-1"></i>
-                  <span>Virtual environments and social networks</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-ieee-light-blue mt-1"></i>
-                  <span>ICT applications in education & training, including eLearning</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-ieee-light-blue mt-1"></i>
-                  <span>E-government, e-governance & e-skills for development</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-ieee-light-blue mt-1"></i>
-                  <span>eHealth & mHealth</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-ieee-light-blue mt-1"></i>
-                  <span>Remote tracking, logistics & monitoring technologies</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-ieee-light-blue mt-1"></i>
-                  <span>Wireless Sensor Networks</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-ieee-light-blue mt-1"></i>
-                  <span>ICT for creative industries & technology innovations</span>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Electrical & Electronic Engineering -->
-            <div class="flat-card bg-white p-8 rounded-xl">
-              <div class="flex items-center gap-3 mb-6">
-                <div class="w-12 h-12 bg-ieee-light-blue rounded-lg flex items-center justify-center">
-                  <i class="fas fa-bolt text-white text-xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-ieee-light-blue">Electrical & Electronic Engineering</h3>
-              </div>
-              <ul class="space-y-2 text-gray-700">
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-ieee-blue mt-1"></i>
-                  <span>Electronics Design</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-ieee-blue mt-1"></i>
-                  <span>Smart Utility Systems</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-ieee-blue mt-1"></i>
-                  <span>Power line communications and their applications</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-ieee-blue mt-1"></i>
-                  <span>Biomedical engineering</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-ieee-blue mt-1"></i>
-                  <span>Consumer electronics and components</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-ieee-blue mt-1"></i>
-                  <span>Measurements and modeling of signal propagation</span>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Information Systems & IT -->
-            <div class="flat-card bg-white p-8 rounded-xl">
-              <div class="flex items-center gap-3 mb-6">
-                <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
-                  <i class="fas fa-database text-white text-xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-green-600">Information Systems & IT</h3>
-              </div>
-              <ul class="space-y-2 text-gray-700">
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-green-500 mt-1"></i>
-                  <span>Cryptocurrency</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-green-500 mt-1"></i>
-                  <span>Decision Support Systems</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-green-500 mt-1"></i>
-                  <span>E-Banking</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-green-500 mt-1"></i>
-                  <span>E-Commerce</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-green-500 mt-1"></i>
-                  <span>E-Marketing</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-green-500 mt-1"></i>
-                  <span>Enterprise Systems</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-green-500 mt-1"></i>
-                  <span>Expert Systems</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-green-500 mt-1"></i>
-                  <span>Other Business, IS & IT related fields</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Keywords and Fields of Interest -->
-          <div class="mt-12 grid lg:grid-cols-2 gap-8">
-            <div class="bg-white p-8 rounded-xl">
-              <h3 class="text-2xl font-bold text-gray-900 mb-6">Keywords</h3>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Telecommunications technologies</span>
-                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Wireless communications</span>
-                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Computer science</span>
-                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Electrical and Electronic Engineering</span>
-                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Software Engineering</span>
-                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Power and Energy Systems</span>
-                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Information and Communication Technologies</span>
-                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Information Systems</span>
-              </div>
-            </div>
-
-            <div class="bg-white p-8 rounded-xl">
-              <h3 class="text-2xl font-bold text-gray-900 mb-6">Fields of Interest</h3>
-              <ul class="space-y-2 text-gray-700">
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-dot-circle text-ieee-blue mt-1"></i>
-                  <span>Communication, Networking and Broadcast Technologies</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-dot-circle text-ieee-blue mt-1"></i>
-                  <span>Components, Circuits, Devices and Systems</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-dot-circle text-ieee-blue mt-1"></i>
-                  <span>Computing and Processing</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-dot-circle text-ieee-blue mt-1"></i>
-                  <span>Fields, Waves and Electromagnetics</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-dot-circle text-ieee-blue mt-1"></i>
-                  <span>Power, Energy and Industry Applications</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-dot-circle text-ieee-blue mt-1"></i>
-                  <span>Cryptography</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-dot-circle text-ieee-blue mt-1"></i>
-                  <span>Watermarking</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-dot-circle text-ieee-blue mt-1"></i>
-                  <span>Steganography</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-dot-circle text-ieee-blue mt-1"></i>
-                  <span>Robotics and Control Systems</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Paper Submission Section -->
-    <section id="submit-paper" class="py-20 bg-white">
-      <div class="container mx-auto px-4 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl lg:text-5xl font-bold gradient-text">Paper Submission</h2>
-          <p class="text-gray-600 mt-3">Guidelines and requirements for submitting your research</p>
-        </div>
-
-        <div class="max-w-7xl mx-auto">
-          <div class="grid lg:grid-cols-3 gap-8">
-            <!-- Author Guidelines -->
-            <div class="flat-card bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-xl">
-              <div class="flex items-center gap-3 mb-6">
-                <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center">
-                  <i class="fas fa-user-check text-white text-xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-red-600">Author Guidelines</h3>
-              </div>
-              <div class="space-y-4 text-gray-700">
-                <p>The IEEE reserves the right to exclude a paper from distribution after the conference if the paper is not presented at the conference.</p>
-                <p>Papers are reviewed on the basis that they do not contain plagiarised material and have not been submitted to any other conference or periodicals at the same time.</p>
-                <div class="bg-white p-4 rounded-lg">
-                  <p class="text-sm text-gray-600 mb-2">IEEE Resources:</p>
-                  <a href="http://www.ieee.org/publications_standards/publications/rights/plagiarism.html" class="text-red-600 hover:underline text-sm">Plagiarism Guidelines</a><br>
-                  <a href="http://www.ieee.org/publications_standards/publications/rights/Multi_Sub_Guidelines_Intro.html" class="text-red-600 hover:underline text-sm">Double Submission Guidelines</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Paper Format -->
-            <div class="flat-card bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl">
-              <div class="flex items-center gap-3 mb-6">
-                <div class="w-12 h-12 bg-ieee-blue rounded-lg flex items-center justify-center">
-                  <i class="fas fa-file-alt text-white text-xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-ieee-blue">Paper Format</h3>
-              </div>
-              <div class="space-y-4 text-gray-700">
-                <p>All submissions should be written in English.</p>
-                <div class="bg-white p-4 rounded-lg">
-                  <p class="font-semibold text-gray-900">Full Papers:</p>
-                  <p class="text-sm">Minimum 5 pages, Maximum 8 pages (including figures)</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg">
-                  <p class="font-semibold text-gray-900">Short Papers:</p>
-                  <p class="text-sm">Minimum 3 pages, Maximum 4 pages</p>
-                </div>
-                <p>Papers should adhere to the standard IEEE Conference Proceedings format.</p>
-                <div class="bg-white p-4 rounded-lg">
-                  <p class="text-sm text-gray-600 mb-2">Templates:</p>
-                  <a href="https://www.ieee.org/publications/rights/multi-sub-guidelines-intro.html" class="text-ieee-blue hover:underline text-sm">Microsoft Word & LaTeX Templates</a>
-                </div>
-                <p class="text-sm text-gray-600">Only PDF files and Word/ODT documents will be accepted for the review process.</p>
-              </div>
-            </div>
-
-            <!-- Important Notice -->
-            <div class="flat-card bg-gradient-to-br from-yellow-50 to-yellow-100 p-8 rounded-xl">
-              <div class="flex items-center gap-3 mb-6">
-                <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center">
-                  <i class="fas fa-exclamation-triangle text-white text-xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-yellow-600">Important Notice</h3>
-              </div>
-              <div class="space-y-4 text-gray-700">
-                <p class="font-semibold text-yellow-800">Publication Requirements:</p>
-                <p>To be published in the ICAST 2026 Conference Proceedings and IEEE Xplore, an author of an accepted paper must:</p>
-                <ul class="space-y-2 ml-4">
-                  <li class="flex items-start gap-2">
-                    <i class="fas fa-check-circle text-yellow-500 mt-1"></i>
-                    <span>Register for the conference</span>
-                  </li>
-                  <li class="flex items-start gap-2">
-                    <i class="fas fa-check-circle text-yellow-500 mt-1"></i>
-                    <span>Present the paper at the conference</span>
-                  </li>
-                  <li class="flex items-start gap-2">
-                    <i class="fas fa-check-circle text-yellow-500 mt-1"></i>
-                    <span>Pay non-refundable registration fees</span>
-                  </li>
-                  <li class="flex items-start gap-2">
-                    <i class="fas fa-check-circle text-yellow-500 mt-1"></i>
-                    <span>Upload the final IEEE formatted paper</span>
-                  </li>
-                </ul>
-                <p class="text-sm bg-white p-3 rounded-lg">One registration is valid for up to 3 papers. Accepted and presented papers will be published in IEEE Xplore.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Submit Button -->
-          <div class="text-center mt-12">
-            <a href="https://cmt3.research.microsoft.com/ICAST2026" class="inline-flex items-center gap-3 px-8 py-4 bg-ieee-blue text-white rounded-lg font-semibold hover:bg-opacity-90 transition text-lg">
-              <i class="fas fa-upload"></i>
-              <span>Submit Your Paper</span>
+      <div class="about-grid">
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Background & Introduction</h3>
+            <p>The IEEE International Conference on Adaptive Science & Technology is a double-blind, annually organized conference covering Information Technology and Computer Science domains: Communication, Networking and Broadcast Technologies, Components, Circuits, Devices and Systems, Computing and Processing, Fields, Waves and Electromagnetics, Power, Energy and Industry Applications, Robotics and Control Systems.</p>
+            <p>ICAST 2026 is accepting submissions for the 11th edition, sponsored by the IEEE Ghana Section. Conference proceedings are indexed in <strong>IEEE Xplore</strong> and <strong>Scopus</strong>.</p>
+            <div class="info-highlight">
               <i class="fas fa-external-link-alt"></i>
-            </a>
-            <p class="text-gray-600 mt-4">All submissions must be done through Microsoft CMT</p>
+              <div>
+                <strong>Past Publications</strong>
+                <p>View previous ICAST publications in <a href="https://www.ieee.org/publications/rights/multi-sub-guidelines-intro.html" target="_blank">IEEE Xplore</a></p>
+              </div>
+            </div>
+            <div class="info-highlight success">
+              <i class="fas fa-file-pdf"></i>
+              <div>
+                <strong>Paper Submission Guide</strong>
+                <p>Learn how to submit via <a href="https://ieee-pdf-express.org/External/UsingIEEEPDFeXpress" target="_blank">IEEE PDF eXpress</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-sidebar">
+          <div class="info-card">
+            <div class="info-card-icon">
+              <i class="fas fa-university"></i>
+            </div>
+            <h4>Venue</h4>
+            <p>Academic City University</p>
+            <p class="location-text">Accra, Ghana</p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-icon">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <h4>Event Dates</h4>
+            <p>Monday to Wednesday</p>
+            <p class="location-text">24-26 October 2026</p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <h4>Conference Type</h4>
+            <p>Double-blind review</p>
+            <p class="location-text">IEEE indexed</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Speakers Section - Flat Modern Cards -->
-    <section id="speakers" class="py-20 bg-gray-50">
-      <div class="container mx-auto px-4 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl lg:text-5xl font-bold gradient-text">Event Speakers</h2>
-          <p class="text-gray-600 mt-3">Leading experts in science and technology</p>
+  <!-- Important Dates Timeline -->
+  <section id="dates" class="dates-section">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-badge">Timeline</span>
+        <h2 class="section-title">Important Dates</h2>
+        <p class="section-subtitle">Mark your calendar with these critical deadlines</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <i class="fas fa-upload"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">15th August 2026</span>
+            <h3>Paper Submission Deadline</h3>
+            <p>Full papers submission closes. Ensure your research is submitted through Microsoft CMT.</p>
+          </div>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          <!-- Speaker 1 -->
-          <div class="flat-card bg-white rounded-2xl overflow-hidden">
-            <div class="aspect-square overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200">
-              <img src="images/speakers/minister.webp" alt="Dr Yaw Osei Adutwum" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-            </div>
-            <div class="p-5">
-              <span class="inline-block px-3 py-1 bg-ieee-light-blue text-white text-xs font-semibold rounded-full mb-3">Keynote Speaker</span>
-              <h3 class="text-lg font-bold mb-1 text-gray-900">Dr Yaw Osei Adutwum</h3>
-              <p class="text-sm text-gray-600">Minister of Education</p>
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <i class="fas fa-envelope-open-text"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">1st September 2026</span>
+            <h3>Notification of Acceptance</h3>
+            <p>Authors will receive acceptance notifications via email.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <i class="fas fa-file-edit"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">24th September 2026</span>
+            <h3>Camera Ready Submission</h3>
+            <p>Final paper submission with all reviewer comments addressed.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <i class="fas fa-ticket-alt"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">1st - 30th September 2026</span>
+            <h3>Early Bird Registration</h3>
+            <p>Register at discounted rates. One registration valid for up to 3 papers.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">24th - 26th October 2026</span>
+            <h3>Conference Days</h3>
+            <p>Three days of presentations, workshops, and networking at Academic City University.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call for Papers -->
+  <section id="topics" class="topics-section">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-badge">Research Areas</span>
+        <h2 class="section-title">Call for Papers</h2>
+        <p class="section-subtitle">We invite original research submissions in the following areas</p>
+      </div>
+
+      <div class="topics-grid">
+        <div class="topic-card">
+          <div class="topic-icon">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <h3>Natural Sciences & Computing</h3>
+          <ul class="topic-list">
+            <li>Bio-computing & Biotechnology</li>
+            <li>Computational Biology</li>
+            <li>Computational Chemistry & Physics</li>
+            <li>Computational Mathematics</li>
+            <li>E-Agriculture</li>
+            <li>Mathematical Models & Simulations</li>
+          </ul>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon">
+            <i class="fas fa-broadcast-tower"></i>
+          </div>
+          <h3>Communications</h3>
+          <ul class="topic-list">
+            <li>Green communications</li>
+            <li>Telecommunications</li>
+            <li>Wireless and fibre networks</li>
+            <li>Satellite communications</li>
+            <li>Software-Defined Radios</li>
+            <li>LTE networks</li>
+            <li>Computer Networking</li>
+          </ul>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Computer Engineering & Science</h3>
+          <ul class="topic-list">
+            <li>Information Security & Forensics</li>
+            <li>Cloud & Green Computing</li>
+            <li>Signal & Image Processing</li>
+            <li>Artificial Intelligence</li>
+            <li>Human Computer Interaction</li>
+            <li>Mobile Technologies</li>
+            <li>Remote Sensing</li>
+          </ul>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon">
+            <i class="fas fa-industry"></i>
+          </div>
+          <h3>Applied Computing</h3>
+          <ul class="topic-list">
+            <li>ICTs in Industrialization</li>
+            <li>ICT in Energy Applications</li>
+            <li>E-Learning & Distance Education</li>
+            <li>E-government & E-governance</li>
+            <li>eHealth & mHealth</li>
+            <li>Wireless Sensor Networks</li>
+            <li>ICT for Innovation</li>
+          </ul>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Electrical & Electronic Engineering</h3>
+          <ul class="topic-list">
+            <li>Electronics Design</li>
+            <li>Smart Utility Systems</li>
+            <li>Power line communications</li>
+            <li>Biomedical engineering</li>
+            <li>Consumer electronics</li>
+            <li>Signal propagation modeling</li>
+          </ul>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Information Systems & E-Business</h3>
+          <ul class="topic-list">
+            <li>Cryptocurrency</li>
+            <li>Decision Support Systems</li>
+            <li>E-Banking & E-Commerce</li>
+            <li>E-Marketing</li>
+            <li>Enterprise Systems</li>
+            <li>Expert Systems</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="keywords-section">
+        <h3>Keywords & Fields of Interest</h3>
+        <div class="keywords-grid">
+          <div class="keyword-group">
+            <h4>Research Keywords</h4>
+            <div class="tag-cloud">
+              <span class="tag">Telecommunications</span>
+              <span class="tag">Wireless Communications</span>
+              <span class="tag">Computer Science</span>
+              <span class="tag">Electrical Engineering</span>
+              <span class="tag">Software Engineering</span>
+              <span class="tag">Power Systems</span>
+              <span class="tag">ICT</span>
+              <span class="tag">Information Systems</span>
             </div>
           </div>
-
-          <!-- Speaker 2 -->
-          <div class="flat-card bg-white rounded-2xl overflow-hidden">
-            <div class="aspect-square overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200">
-              <img src="images/speakers/prof.jpg" alt="Ing. Prof. Issaka Yakubu" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-            </div>
-            <div class="p-5">
-              <span class="inline-block px-3 py-1 bg-ieee-blue text-white text-xs font-semibold rounded-full mb-3">Chair</span>
-              <h3 class="text-lg font-bold mb-1 text-gray-900">Ing. Prof. Issaka Yakubu</h3>
-              <p class="text-sm text-gray-600">Conference Chairperson</p>
-            </div>
-          </div>
-
-          <!-- Speaker 3 -->
-          <div class="flat-card bg-white rounded-2xl overflow-hidden">
-            <div class="aspect-square overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200">
-              <img src="images/speakers/george_eduful__1___1___1_-removebg-preview (1).png" alt="Dr. George Eduful" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-            </div>
-            <div class="p-5">
-              <span class="inline-block px-3 py-1 bg-ieee-blue text-white text-xs font-semibold rounded-full mb-3">Co-Chair</span>
-              <h3 class="text-lg font-bold mb-1 text-gray-900">Dr. George Eduful</h3>
-              <p class="text-sm text-gray-600">Conference Co-Chairperson</p>
-            </div>
-          </div>
-
-          <!-- Speaker 4 -->
-          <div class="flat-card bg-white rounded-2xl overflow-hidden">
-            <div class="aspect-square overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200">
-              <img src="images/speakers/civil aviation.jpg" alt="Ing. Charles Kraikue" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-            </div>
-            <div class="p-5">
-              <span class="inline-block px-3 py-1 bg-green-500 text-white text-xs font-semibold rounded-full mb-3">Industry Expert</span>
-              <h3 class="text-lg font-bold mb-1 text-gray-900">Ing. Charles Kraikue</h3>
-              <p class="text-sm text-gray-600">Director General, GCATC</p>
+          <div class="keyword-group">
+            <h4>Interest Areas</h4>
+            <div class="tag-cloud">
+              <span class="tag">Networking</span>
+              <span class="tag">Circuits & Devices</span>
+              <span class="tag">Computing</span>
+              <span class="tag">Electromagnetics</span>
+              <span class="tag">Energy Applications</span>
+              <span class="tag">Cryptography</span>
+              <span class="tag">Robotics</span>
+              <span class="tag">Control Systems</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Venue Section -->
-    <section id="venue" class="py-20 bg-white">
-      <div class="container mx-auto px-4 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl lg:text-5xl font-bold gradient-text">Event Venue</h2>
-          <p class="text-gray-600 mt-3">Event venue location info and gallery</p>
+  <!-- Paper Submission Guidelines -->
+  <section id="submission" class="submission-section">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-badge">Guidelines</span>
+        <h2 class="section-title">Paper Submission</h2>
+        <p class="section-subtitle">Requirements and process for submitting your research</p>
+      </div>
+
+      <div class="submission-grid">
+        <div class="guideline-card danger">
+          <div class="guideline-header">
+            <i class="fas fa-exclamation-circle"></i>
+            <h3>Author Guidelines</h3>
+          </div>
+          <div class="guideline-content">
+            <p>Papers are reviewed on the basis that they do not contain plagiarized material and have not been submitted to any other conference or periodicals simultaneously.</p>
+            <p>IEEE reserves the right to exclude papers from distribution after the conference if not presented at the event.</p>
+            <div class="guideline-links">
+              <a href="http://www.ieee.org/publications_standards/publications/rights/plagiarism.html" target="_blank">
+                <i class="fas fa-link"></i> Plagiarism Policy
+              </a>
+              <a href="http://www.ieee.org/publications_standards/publications/rights/Multi_Sub_Guidelines_Intro.html" target="_blank">
+                <i class="fas fa-link"></i> Double Submission Policy
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="max-w-7xl mx-auto">
-          <div class="grid lg:grid-cols-2 gap-8">
-            <!-- Venue Map -->
-            <div class="flat-card bg-white rounded-xl overflow-hidden">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31766.01982374!2d-0.24!3d5.61!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzYnMzYuMCJOIDDCsDEzJzU5LjMiVw!5e0!3m2!1sen!2sgh!4v1700000000000!5m2!1sen!2sgh"
-                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" class="w-full">
-              </iframe>
-            </div>
-
-            <!-- Venue Info -->
-            <div class="flex items-center">
-              <div class="flat-card bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl">
-                <div class="flex items-center gap-4 mb-6">
-                  <div class="w-16 h-16 bg-ieee-blue rounded-xl flex items-center justify-center">
-                    <i class="fas fa-university text-white text-2xl"></i>
-                  </div>
-                  <div>
-                    <h3 class="text-2xl font-bold text-ieee-blue">Academic City University</h3>
-                    <p class="text-gray-600">Accra, Ghana</p>
-                  </div>
-                </div>
-
-                <p class="text-gray-700 leading-relaxed text-justify">
-                  Nestled in the heart of the city, our conference venue offers an unparalleled blend of convenience and sophistication. With state-of-the-art facilities and breathtaking views, it provides the perfect backdrop for an engaging and memorable gathering. Whether you're looking to inspire innovation, foster connections, or celebrate achievements, our venue is designed to accommodate your needs, ensuring a seamless and successful event.
-                </p>
+        <div class="guideline-card primary">
+          <div class="guideline-header">
+            <i class="fas fa-file-alt"></i>
+            <h3>Paper Format</h3>
+          </div>
+          <div class="guideline-content">
+            <p>All submissions must be written in English and adhere to IEEE Conference Proceedings format.</p>
+            <div class="format-specs">
+              <div class="spec-item">
+                <strong>Full Papers:</strong>
+                <span>5-8 pages (including figures)</span>
+              </div>
+              <div class="spec-item">
+                <strong>Short Papers:</strong>
+                <span>3-4 pages</span>
+              </div>
+              <div class="spec-item">
+                <strong>Accepted Formats:</strong>
+                <span>PDF, Word/ODT documents</span>
               </div>
             </div>
+            <div class="guideline-links">
+              <a href="https://www.ieee.org/publications/rights/multi-sub-guidelines-intro.html" target="_blank">
+                <i class="fas fa-download"></i> Download Templates
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="guideline-card warning">
+          <div class="guideline-header">
+            <i class="fas fa-bell"></i>
+            <h3>Publication Requirements</h3>
+          </div>
+          <div class="guideline-content">
+            <p>To be published in ICAST 2026 Conference Proceedings and IEEE Xplore, authors must:</p>
+            <ul class="requirement-list">
+              <li><i class="fas fa-check"></i> Register for the conference</li>
+              <li><i class="fas fa-check"></i> Present the paper at the event</li>
+              <li><i class="fas fa-check"></i> Pay non-refundable registration fees</li>
+              <li><i class="fas fa-check"></i> Upload final IEEE-formatted paper</li>
+            </ul>
+            <p class="note">Note: One registration is valid for up to 3 papers.</p>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Hotels Section -->
-    <section id="hotels" class="py-20 bg-gray-50">
-      <div class="container mx-auto px-4 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl lg:text-5xl font-bold gradient-text">Hotels</h2>
-          <p class="text-gray-600 mt-3">Recommended accommodations near the venue</p>
+      <div class="submission-cta">
+        <div class="cta-content">
+          <h3>Ready to Submit Your Research?</h3>
+          <p>All submissions must be done through Microsoft CMT platform</p>
         </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          <!-- Hotel 1 -->
-          <div class="flat-card bg-white rounded-xl overflow-hidden hover:shadow-lg transition">
-            <div class="aspect-video overflow-hidden">
-              <img src="images/hotels/holidayin.jpg" alt="Holiday In Hotel" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Holiday In Hotel</h3>
-              <div class="flex items-center gap-1 mb-3">
-                <i class="fas fa-star text-yellow-400"></i>
-                <i class="fas fa-star text-yellow-400"></i>
-                <i class="fas fa-star text-yellow-400"></i>
-                <i class="fas fa-star text-yellow-400"></i>
-                <i class="fas fa-star text-yellow-400"></i>
-                <span class="text-sm text-gray-600 ml-2">5.0</span>
-              </div>
-              <div class="flex items-center gap-2 text-gray-600">
-                <i class="fas fa-map-marker-alt text-ieee-blue"></i>
-                <span>0.4 Mile from the Venue</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Hotel 2 -->
-          <div class="flat-card bg-white rounded-xl overflow-hidden hover:shadow-lg transition">
-            <div class="aspect-video overflow-hidden">
-              <img src="images/hotels/labadi beach.jpg" alt="Labadi Beach Inn" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Labadi Beach Inn</h3>
-              <div class="flex items-center gap-1 mb-3">
-                <i class="fas fa-star text-yellow-400"></i>
-                <i class="fas fa-star text-yellow-400"></i>
-                <i class="fas fa-star text-yellow-400"></i>
-                <i class="fas fa-star text-yellow-400"></i>
-                <i class="fas fa-star-half-alt text-yellow-400"></i>
-                <span class="text-sm text-gray-600 ml-2">4.5</span>
-              </div>
-              <div class="flex items-center gap-2 text-gray-600">
-                <i class="fas fa-map-marker-alt text-ieee-blue"></i>
-                <span>0.5 Mile from the Venue</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Hotel 3 -->
-          <div class="flat-card bg-white rounded-xl overflow-hidden hover:shadow-lg transition">
-            <div class="aspect-video overflow-hidden">
-              <img src="images/hotels/c.jpg" alt="Cloud9 Luxury Apartments" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Cloud9 Luxury Apartments</h3>
-              <div class="flex items-center gap-1 mb-3">
-                <i class="fas fa-star text-yellow-400"></i>
-                <i class="fas fa-star text-yellow-400"></i>
-                <i class="fas fa-star text-yellow-400"></i>
-                <i class="fas fa-star text-yellow-400"></i>
-                <span class="text-sm text-gray-600 ml-2">4.0</span>
-              </div>
-              <div class="flex items-center gap-2 text-gray-600">
-                <i class="fas fa-map-marker-alt text-ieee-blue"></i>
-                <span>0.6 Mile from the Venue</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sponsors Section -->
-    <section id="sponsors" class="py-20 bg-white">
-      <div class="container mx-auto px-4 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl lg:text-5xl font-bold gradient-text">Sponsors</h2>
-          <p class="text-gray-600 mt-3">Our valued partners and supporters</p>
-        </div>
-
-        <div class="max-w-7xl mx-auto">
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
-            <!-- Sponsor 1 -->
-            <div class="flat-card bg-gray-50 p-6 rounded-xl hover:bg-gray-100 transition flex items-center justify-center">
-              <img src="images/sponsors/1.png" alt="Sponsor 1" class="max-h-16 max-w-full object-contain">
-            </div>
-
-            <!-- Sponsor 2 -->
-            <div class="flat-card bg-gray-50 p-6 rounded-xl hover:bg-gray-100 transition flex items-center justify-center">
-              <img src="images/sponsors/2.png" alt="Sponsor 2" class="max-h-16 max-w-full object-contain">
-            </div>
-
-            <!-- Sponsor 3 -->
-            <div class="flat-card bg-gray-50 p-6 rounded-xl hover:bg-gray-100 transition flex items-center justify-center">
-              <img src="images/sponsors/GCAA Ghana.png" alt="GCAA Ghana" class="max-h-16 max-w-full object-contain">
-            </div>
-
-            <!-- Sponsor 4 -->
-            <div class="flat-card bg-gray-50 p-6 rounded-xl hover:bg-gray-100 transition flex items-center justify-center">
-              <img src="images/sponsors/ieee-region-8.png" alt="IEEE Region 8" class="max-h-16 max-w-full object-contain">
-            </div>
-
-            <!-- Sponsor 5 -->
-            <div class="flat-card bg-gray-50 p-6 rounded-xl hover:bg-gray-100 transition flex items-center justify-center">
-              <img src="images/sponsors/IEEE-CS_LogoTM-orange.png" alt="IEEE Computer Society" class="max-h-16 max-w-full object-contain">
-            </div>
-
-            <!-- Sponsor 6 -->
-            <div class="flat-card bg-gray-50 p-6 rounded-xl hover:bg-gray-100 transition flex items-center justify-center">
-              <img src="images/sponsors/yp.png" alt="Young Professionals" class="max-h-16 max-w-full object-contain">
-            </div>
-
-            <!-- Sponsor 7 -->
-            <div class="flat-card bg-gray-50 p-6 rounded-xl hover:bg-gray-100 transition flex items-center justify-center">
-              <img src="images/sponsors/23-CA-2-003-FP- IEEE Humanitarian Technologies Board Wordmark-Color-RGB.jpg" alt="IEEE Humanitarian Technologies Board" class="max-h-16 max-w-full object-contain">
-            </div>
-
-            <!-- Sponsor 8 -->
-            <div class="flat-card bg-gray-50 p-6 rounded-xl hover:bg-gray-100 transition flex items-center justify-center">
-              <img src="images/sponsors/comsoc.jpeg" alt="IEEE Communications Society" class="max-h-16 max-w-full object-contain">
-            </div>
-
-            <!-- Sponsor 9 -->
-            <div class="flat-card bg-gray-50 p-6 rounded-xl hover:bg-gray-100 transition flex items-center justify-center">
-              <img src="images/sponsors/ieee_icast.jpg" alt="IEEE ICAST" class="max-h-16 max-w-full object-contain">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Continue with rest of sections... Let me show you the continuation -->
-    <!-- The rest of the content remains similar to your original but with flat design applied -->
-    <!-- Due to length constraints, I'm focusing on the key improved sections -->
-
-    <!-- Contact CTA Section -->
-    <section class="py-20 bg-ieee-blue text-white">
-      <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Submit Your Paper?</h2>
-        <p class="text-lg mb-8 text-blue-100">Join us at ICAST 2026 and share your research with the world</p>
-        <a href="#submit-paper" class="inline-flex items-center gap-2 px-8 py-4 bg-ieee-light-blue text-white rounded-lg font-semibold hover:bg-opacity-90 transition">
-          <span>Submit Now</span>
-          <i class="fas fa-arrow-right"></i>
+        <a href="https://cmt3.research.microsoft.com/ICAST2026" target="_blank" class="btn-primary large">
+          <i class="fas fa-paper-plane"></i>
+          <span>Submit Your Paper</span>
+          <i class="fas fa-external-link-alt"></i>
         </a>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-gray-50">
-    <div class="container mx-auto px-4 lg:px-8">
-      <div class="text-center mb-12">
-        <h2 class="text-4xl lg:text-5xl font-bold gradient-text">Contact Us</h2>
-        <p class="text-gray-600 mt-3">Get in touch with the ICAST 2026 team</p>
+  <!-- Keynote Speakers -->
+  <section id="speakers" class="speakers-section">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-badge">Leadership</span>
+        <h2 class="section-title">Keynote Speakers</h2>
+        <p class="section-subtitle">Distinguished experts leading ICAST 2026</p>
       </div>
 
-      <div class="max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-3 gap-8 mb-12">
-          <!-- Address -->
-          <div class="flat-card bg-white p-8 rounded-xl text-center">
-            <div class="w-16 h-16 bg-ieee-blue rounded-xl flex items-center justify-center mx-auto mb-6">
-              <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+      <div class="speakers-grid">
+        <div class="speaker-card featured">
+          <div class="speaker-image">
+            <img src="images/speakers/minister.webp" alt="Dr Yaw Osei Adutwum">
+            <div class="speaker-overlay">
+              <span class="speaker-role">Keynote Speaker</span>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Address</h3>
-            <address class="text-gray-600 not-italic">Accra, Ghana</address>
           </div>
-
-          <!-- Phone -->
-          <div class="flat-card bg-white p-8 rounded-xl text-center">
-            <div class="w-16 h-16 bg-green-500 rounded-xl flex items-center justify-center mx-auto mb-6">
-              <i class="fas fa-phone text-white text-2xl"></i>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Phone Number</h3>
-            <p class="text-gray-600">
-              <a href="tel:+233208351347" class="text-ieee-blue hover:underline">+233 20 835 1347</a><br>
-              <a href="tel:+233249653242" class="text-ieee-blue hover:underline">+233 24 965 3242</a>
-            </p>
-          </div>
-
-          <!-- Email -->
-          <div class="flat-card bg-white p-8 rounded-xl text-center">
-            <div class="w-16 h-16 bg-red-500 rounded-xl flex items-center justify-center mx-auto mb-6">
-              <i class="fas fa-envelope text-white text-2xl"></i>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Email</h3>
-            <p class="text-gray-600">
-              <a href="mailto:info@ieeeghicast2026.org" class="text-ieee-blue hover:underline">info@ieeeghicast2026.org</a>
-            </p>
+          <div class="speaker-info">
+            <h3>Dr Yaw Osei Adutwum</h3>
+            <p class="speaker-title">Minister of Education</p>
           </div>
         </div>
 
-        <!-- Contact Form -->
-        <div class="max-w-4xl mx-auto">
-          <div class="flat-card bg-white p-8 rounded-xl">
-            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Send us a Message</h3>
-            <form action="" method="post" role="form" class="contactForm space-y-6">
-              <div class="grid md:grid-cols-2 gap-6">
-                <div>
-                  <input type="text" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ieee-blue focus:border-transparent" placeholder="Your Name" required>
-                </div>
-                <div>
-                  <input type="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ieee-blue focus:border-transparent" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div>
-                <input type="text" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ieee-blue focus:border-transparent" placeholder="Subject" required>
-              </div>
-              <div>
-                <textarea name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ieee-blue focus:border-transparent resize-none" placeholder="Your Message" required></textarea>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="inline-flex items-center gap-2 px-8 py-3 bg-ieee-blue text-white rounded-lg font-semibold hover:bg-opacity-90 transition">
-                  <i class="fas fa-paper-plane"></i>
-                  <span>Send Message</span>
-                </button>
-              </div>
-            </form>
+        <div class="speaker-card">
+          <div class="speaker-image">
+            <img src="images/speakers/prof.jpg" alt="Ing. Prof. Issaka Yakubu">
+            <div class="speaker-overlay">
+              <span class="speaker-role">Conference Chair</span>
+            </div>
+          </div>
+          <div class="speaker-info">
+            <h3>Ing. Prof. Issaka Yakubu</h3>
+            <p class="speaker-title">Conference Chairperson</p>
+            <p class="speaker-bio">Associate Professor of Geomatic Engineering at UMaT, Tarkwa-Ghana. Expert in Land Policy, Mine Surveying, GNSS applications, and Geo-Information Management.</p>
+          </div>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-image">
+            <img src="images/speakers/george_eduful__1___1___1_-removebg-preview (1).png" alt="Dr. George Eduful">
+            <div class="speaker-overlay">
+              <span class="speaker-role">Co-Chair</span>
+            </div>
+          </div>
+          <div class="speaker-info">
+            <h3>Dr. George Eduful</h3>
+            <p class="speaker-title">Conference Co-Chairperson</p>
+          </div>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-image">
+            <img src="images/speakers/civil aviation.jpg" alt="Ing. Charles Kraikue">
+            <div class="speaker-overlay">
+              <span class="speaker-role">Industry Expert</span>
+            </div>
+          </div>
+          <div class="speaker-info">
+            <h3>Ing. Charles Kraikue</h3>
+            <p class="speaker-title">Director General, Ghana Civil Aviation Training Centre</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer - Clean & Flat -->
-  <footer class="bg-gray-900 text-gray-400 py-12">
-    <div class="container mx-auto px-4 lg:px-8">
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-        <!-- About -->
-        <div>
-          <img src="images/logo/logo.jpg" alt="ICAST Logo" class="h-14 mb-4">
-          <p class="text-sm leading-relaxed">
-            IEEE ICAST 2026 is accepting submission for the IEEE Ghana section. The conference will feature world-class plenary speakers, major Technical symposiums, industry, and academic panels.
+  <!-- Venue Section -->
+  <section id="venue" class="venue-section">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-badge">Location</span>
+        <h2 class="section-title">Event Venue</h2>
+        <p class="section-subtitle">Academic City University, Accra</p>
+      </div>
+
+      <div class="venue-grid">
+        <div class="venue-info">
+          <div class="venue-card">
+            <div class="venue-card-header">
+              <i class="fas fa-building"></i>
+              <h3>Academic City University</h3>
+            </div>
+            <p>Nestled in the heart of Accra, our conference venue offers an unparalleled blend of convenience and sophistication. With state-of-the-art facilities and breathtaking views, it provides the perfect backdrop for an engaging and memorable gathering.</p>
+
+            <div class="venue-features">
+              <div class="feature-item">
+                <i class="fas fa-wifi"></i>
+                <span>High-Speed WiFi</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-video"></i>
+                <span>AV Equipment</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-utensils"></i>
+                <span>Catering Services</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-parking"></i>
+                <span>Parking Available</span>
+              </div>
+            </div>
+
+            <div class="hotels-list">
+              <h4>Nearby Hotels</h4>
+              <div class="hotel-item">
+                <i class="fas fa-hotel"></i>
+                <div>
+                  <strong>Holiday In Hotel</strong>
+                  <span>0.4 miles • ★★★★★</span>
+                </div>
+              </div>
+              <div class="hotel-item">
+                <i class="fas fa-hotel"></i>
+                <div>
+                  <strong>Labadi Beach Inn</strong>
+                  <span>0.5 miles • ★★★★½</span>
+                </div>
+              </div>
+              <div class="hotel-item">
+                <i class="fas fa-hotel"></i>
+                <div>
+                  <strong>Cloud9 Luxury Apartments</strong>
+                  <span>0.6 miles • ★★★★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="venue-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31766.01982374!2d-0.24!3d5.61!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzYnMzYuMCJOIDDCsDEzJzU5LjMiVw!5e0!3m2!1sen!2sgh!4v1700000000000!5m2!1sen!2sgh"
+            width="100%"
+            height="600"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsors Section -->
+  <section id="sponsors" class="sponsors-section">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-badge">Partners</span>
+        <h2 class="section-title">Our Sponsors</h2>
+        <p class="section-subtitle">Supported by leading organizations in technology and research</p>
+      </div>
+
+      <div class="sponsors-grid">
+        <div class="sponsor-item">
+          <img src="images/sponsors/1.png" alt="Sponsor">
+        </div>
+        <div class="sponsor-item">
+          <img src="images/sponsors/2.png" alt="Sponsor">
+        </div>
+        <div class="sponsor-item">
+          <img src="images/sponsors/GCAA Ghana.png" alt="GCAA Ghana">
+        </div>
+        <div class="sponsor-item">
+          <img src="images/sponsors/ieee-region-8.png" alt="IEEE Region 8">
+        </div>
+        <div class="sponsor-item">
+          <img src="images/sponsors/IEEE-CS_LogoTM-orange.png" alt="IEEE Computer Society">
+        </div>
+        <div class="sponsor-item">
+          <img src="images/sponsors/yp.png" alt="Young Professionals">
+        </div>
+        <div class="sponsor-item">
+          <img src="images/sponsors/23-CA-2-003-FP- IEEE Humanitarian Technologies Board Wordmark-Color-RGB.jpg" alt="IEEE Humanitarian Technologies">
+        </div>
+        <div class="sponsor-item">
+          <img src="images/sponsors/comsoc.jpeg" alt="IEEE Communications Society">
+        </div>
+        <div class="sponsor-item">
+          <img src="images/sponsors/ieee_icast.jpg" alt="IEEE ICAST">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-badge">Get in Touch</span>
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">Have questions? We're here to help</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Address</h3>
+            <p>Academic City University<br>Accra, Ghana</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3>Phone</h3>
+            <p>
+              <a href="tel:+233208351347">+233 20 835 1347</a><br>
+              <a href="tel:+233249653242">+233 24 965 3242</a>
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p><a href="mailto:info@ieeeghicast2026.org">info@ieeeghicast2026.org</a></p>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form class="contact-form" action="" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary large">
+              <i class="fas fa-paper-plane"></i>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="images/logo/logo.jpg" alt="ICAST Logo">
+          </div>
+          <p>IEEE ICAST 2026 brings together researchers, innovators, and industry leaders to explore the latest advancements in science and technology.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#topics">Call for Papers</a></li>
+            <li><a href="#submission">Submission</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="committee.html">Committees</a></li>
+            <li><a href="workshop.html">Workshop</a></li>
+            <li><a href="doctoral-consortium.html">Doctoral Consortium</a></li>
+            <li><a href="./register.php">Registration</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          <p class="footer-contact">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@ieeeghicast2026.org">info@ieeeghicast2026.org</a>
           </p>
-        </div>
-
-        <!-- Quick Links -->
-        <div>
-          <h4 class="text-white font-bold mb-4">Quick Links</h4>
-          <ul class="space-y-2 text-sm">
-            <li><a href="index.html" class="hover:text-ieee-light-blue transition">→ Home</a></li>
-            <li><a href="#about" class="hover:text-ieee-light-blue transition">→ About</a></li>
-            <li><a href="#speakers" class="hover:text-ieee-light-blue transition">→ Speakers</a></li>
-            <li><a href="#sponsors" class="hover:text-ieee-light-blue transition">→ Sponsors</a></li>
-          </ul>
-        </div>
-
-        <!-- Important -->
-        <div>
-          <h4 class="text-white font-bold mb-4">Important</h4>
-          <ul class="space-y-2 text-sm">
-            <li><a href="committee.html" class="hover:text-ieee-light-blue transition">→ Committees</a></li>
-            <li><a href="workshop.html" class="hover:text-ieee-light-blue transition">→ Workshop</a></li>
-            <li><a href="doctoral-consortium.html" class="hover:text-ieee-light-blue transition">→ Doctoral Consortium</a></li>
-            <li><a href="register.php" class="hover:text-ieee-light-blue transition">→ Registration</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact -->
-        <div>
-          <h4 class="text-white font-bold mb-4">Contact</h4>
-          <ul class="space-y-3 text-sm">
-            <li class="flex items-start gap-2">
-              <i class="fas fa-map-marker-alt text-ieee-light-blue mt-0.5"></i>
-              <span>Academic City University, Accra, Ghana</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i class="fas fa-phone text-ieee-light-blue mt-0.5"></i>
-              <span>+233 20 835 1347</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i class="fas fa-envelope text-ieee-light-blue mt-0.5"></i>
-              <span>info@ieeeghicast2026.org</span>
-            </li>
-          </ul>
         </div>
       </div>
 
-      <div class="border-t border-gray-800 pt-8 text-center text-sm">
-        <p>&copy; 2026 <strong>IEEE</strong>. All Rights Reserved | Designed by <a href="https://ghprofit.com/" class="text-ieee-light-blue hover:underline">GhProfit</a></p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 IEEE ICAST. All Rights Reserved</p>
+        <p>Designed by <a href="https://ghprofit.com/" target="_blank">GhProfit</a></p>
       </div>
     </div>
   </footer>
 
-  <!-- Back to Top - Minimal -->
-  <a href="#" id="back-to-top" class="fixed bottom-6 right-6 w-11 h-11 bg-ieee-blue text-white rounded-full flex items-center justify-center hover:bg-ieee-light-blue transition opacity-0 pointer-events-none">
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
     <i class="fas fa-arrow-up"></i>
-  </a>
+  </button>
 
-  <!-- JavaScript -->
-  <script>
-    // Mobile Menu Toggle
-    function toggleMobileMenu() {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
-    }
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    // Back to Top
-    window.addEventListener('scroll', () => {
-      const backToTop = document.getElementById('back-to-top');
-      if (window.pageYOffset > 300) {
-        backToTop.classList.remove('opacity-0', 'pointer-events-none');
-      } else {
-        backToTop.classList.add('opacity-0', 'pointer-events-none');
-      }
-    });
-
-    document.getElementById('back-to-top').addEventListener('click', (e) => {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  </script>
+  <!-- Custom JavaScript -->
+  <script src="./js/modern-script.js"></script>
 </body>
 </html>
