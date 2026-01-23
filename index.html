@@ -6,7 +6,7 @@
   <meta name="keywords" content="IEEE, ICAST 2026, Academic City University, ICAST Conference 2026, International Conference, Advanced Science and Technology, IEEE Ghana Section, research, innovations">
   <meta name="description" content="Join the IEEE ICAST 2026 in Ghana, the premier International Conference on Advanced Science and Technology. Hosted by the IEEE Ghana Section at Academic City University.">
 
-  <title>IEEE ICAST 2026 - Academic City University | International Conference on Advanced Science and Technology</title>
+  <title>IEEE ICAST 2026 - Academic City University | International Conference on Adaptive Science and Technology</title>
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="./images/logo/favicon_io/apple-touch-icon.png">
@@ -14,17 +14,13 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./images/logo/favicon_io/favicon-16x16.png">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- AOS Animation Library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="./css/modern-styles.css">
-  <link rel="stylesheet" href="./css/hero-enhanced.css">
+  <link rel="stylesheet" href="./css/grand-style.css">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8VLYL6BD84"></script>
@@ -37,305 +33,687 @@
 </head>
 <body>
 
-  <!-- Floating Navigation -->
-  <nav id="main-nav" class="nav-container">
-    <div class="nav-brand">
-      <a href="index.html">
-        <span class="brand-text">ICAST</span>
-        <span class="brand-year">2026</span>
-      </a>
-    </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <div class="nav-menu" id="navMenu">
-      <a href="#home" class="nav-link active">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#dates" class="nav-link">Key Dates</a>
-      <a href="#topics" class="nav-link">Topics</a>
-      <a href="#submission" class="nav-link">Submission</a>
-      <a href="#speakers" class="nav-link">Speakers</a>
-      <a href="#venue" class="nav-link">Venue</a>
-      <a href="committee.html" class="nav-link">Committees</a>
-      <a href="workshop.html" class="nav-link">Workshop</a>
-      <a href="doctoral-consortium.html" class="nav-link">Doctoral</a>
-      <a href="./register.php" class="nav-link-btn">Register</a>
+  <!-- Navigation -->
+  <nav class="nav-container" id="mainNav">
+    <div class="nav-wrapper">
+      <div class="nav-brand">
+        <div class="nav-brand-icon">
+          <i class="fas fa-award"></i>
+        </div>
+        <span class="nav-brand-text">ICAST</span>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#schedules" class="nav-link">Schedules</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#sponsors" class="nav-link">Sponsors</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
     </div>
   </nav>
 
-  <!-- Announcement Bar -->
-  <div class="announcement-bar">
-    <div class="announcement-content">
-      <i class="fas fa-bullhorn"></i>
-      <span>New! <a href="doctoral-consortium.html">Doctoral Consortium</a> event on October 23, 2026 - Learn More</span>
-    </div>
-  </div>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero-section">
-    <!-- Animated Background -->
-    <div class="hero-background">
-      <div class="floating-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-        <div class="shape shape-4"></div>
-        <div class="shape shape-5"></div>
-        <div class="shape shape-6"></div>
-      </div>
-    </div>
-
-    <!-- Hero Content -->
-    <div class="hero-content">
-      <!-- Top Badge -->
-      <div class="hero-badge" data-aos="fade-down">
-        <span class="badge-dot"></span>
-        <span>11th Edition • IEEE Ghana Section</span>
-        <span class="badge-dot"></span>
-      </div>
-
-      <!-- Main Title with Animation -->
-      <div class="hero-title-wrapper">
-        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
-          <span class="title-main">ICAST</span>
-          <span class="title-year">2026</span>
-        </h1>
-        <div class="title-underline" data-aos="scale-x" data-aos-delay="300"></div>
-      </div>
-
-      <!-- Subtitle -->
-      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
-        International Conference on Adaptive Science & Technology
-      </p>
-
-      <!-- Countdown Timer -->
-      <div class="countdown-container" data-aos="fade-up" data-aos-delay="300">
-        <div class="countdown-label">Conference Starts In</div>
-        <div class="countdown-timer" id="countdown">
-          <div class="countdown-item">
-            <div class="countdown-number" id="days">000</div>
-            <div class="countdown-text">Days</div>
-          </div>
-          <div class="countdown-separator">:</div>
-          <div class="countdown-item">
-            <div class="countdown-number" id="hours">00</div>
-            <div class="countdown-text">Hours</div>
-          </div>
-          <div class="countdown-separator">:</div>
-          <div class="countdown-item">
-            <div class="countdown-number" id="minutes">00</div>
-            <div class="countdown-text">Minutes</div>
-          </div>
-          <div class="countdown-separator">:</div>
-          <div class="countdown-item">
-            <div class="countdown-number" id="seconds">00</div>
-            <div class="countdown-text">Seconds</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Event Details -->
-      <div class="hero-details" data-aos="fade-up" data-aos-delay="400">
-        <div class="detail-item">
-          <div class="detail-icon">
-            <i class="fas fa-calendar-alt"></i>
-          </div>
-          <div class="detail-content">
-            <span class="detail-label">Date</span>
-            <span class="detail-value">24-26 October 2026</span>
-          </div>
-        </div>
-        <div class="detail-divider"></div>
-        <div class="detail-item">
-          <div class="detail-icon">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <div class="detail-content">
-            <span class="detail-label">Venue</span>
-            <span class="detail-value">Academic City University</span>
-          </div>
-        </div>
-        <div class="detail-divider"></div>
-        <div class="detail-item">
-          <div class="detail-icon">
-            <i class="fas fa-globe-africa"></i>
-          </div>
-          <div class="detail-content">
-            <span class="detail-label">Location</span>
-            <span class="detail-value">Accra, Ghana</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- CTA Buttons -->
-      <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
-        <a href="#submission" class="btn-primary btn-glow">
-          <i class="fas fa-paper-plane"></i>
-          <span>Submit Your Paper</span>
-          <i class="fas fa-arrow-right"></i>
-        </a>
-        <a href="#about" class="btn-secondary">
-          <i class="fas fa-info-circle"></i>
-          <span>Learn More</span>
-        </a>
-        <a href="./register.php" class="btn-tertiary">
-          <i class="fas fa-user-plus"></i>
-          <span>Register Now</span>
-        </a>
-      </div>
-
-      <!-- Key Highlights -->
-      <div class="hero-highlights" data-aos="fade-up" data-aos-delay="600">
-        <div class="highlight-item">
-          <div class="highlight-icon">
-            <i class="fas fa-award"></i>
-          </div>
-          <div class="highlight-text">
-            <strong>IEEE Indexed</strong>
-            <span>Published in IEEE Xplore</span>
-          </div>
-        </div>
-        <div class="highlight-item">
-          <div class="highlight-icon">
-            <i class="fas fa-graduation-cap"></i>
-          </div>
-          <div class="highlight-text">
-            <strong>Double-Blind Review</strong>
-            <span>Rigorous peer review process</span>
-          </div>
-        </div>
-        <div class="highlight-item">
-          <div class="highlight-icon">
-            <i class="fas fa-globe"></i>
-          </div>
-          <div class="highlight-text">
-            <strong>International</strong>
-            <span>Global participation</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Stats Grid -->
-      <div class="hero-stats" data-aos="fade-up" data-aos-delay="700">
-        <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fas fa-trophy"></i>
-          </div>
-          <div class="stat-info">
-            <div class="stat-number" data-count="11">0</div>
-            <div class="stat-label">Conference Editions</div>
-          </div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fas fa-calendar-week"></i>
-          </div>
-          <div class="stat-info">
-            <div class="stat-number" data-count="3">0</div>
-            <div class="stat-label">Days of Innovation</div>
-          </div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fas fa-users"></i>
-          </div>
-          <div class="stat-info">
-            <div class="stat-number" data-count="50">0</div>
-            <div class="stat-label">Expert Speakers</div>
-          </div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fas fa-chalkboard-teacher"></i>
-          </div>
-          <div class="stat-info">
-            <div class="stat-number" data-count="12">0</div>
-            <div class="stat-label">Technical Workshops</div>
-          </div>
+  <!-- Hero Slider Section -->
+  <section id="home" class="hero-slider">
+    <!-- Slide 1 -->
+    <div class="hero-slide active" style="background-image: url('./images/bg-1.jpg');">
+      <div class="hero-slide-content">
+        <p class="hero-tagline">IEEE Ghana Section presents</p>
+        <h1 class="hero-title">11th International Conference on Adaptive Science & Technology</h1>
+        <div class="hero-buttons">
+          <a href="./register.php" class="btn-primary">Get Ticket</a>
+          <a href="#about" class="btn-secondary">Explore More</a>
         </div>
       </div>
     </div>
 
-    <!-- Scroll Indicator -->
-    <div class="scroll-indicator" data-aos="fade" data-aos-delay="1000">
-      <span>Scroll to explore</span>
-      <div class="scroll-arrow">
-        <i class="fas fa-chevron-down"></i>
+    <!-- Slide 2 -->
+    <div class="hero-slide" style="background-image: url('./images/bg-2.jpg');">
+      <div class="hero-slide-content">
+        <p class="hero-tagline">IEEE Ghana Section presents</p>
+        <h1 class="hero-title">50+ Expert Speakers</h1>
+        <div class="hero-buttons">
+          <a href="#speakers" class="btn-primary">View Speakers</a>
+        </div>
       </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="hero-slide" style="background-image: url('./images/bg-3.jpg');">
+      <div class="hero-slide-content">
+        <p class="hero-tagline">IEEE Ghana Section presents</p>
+        <h1 class="hero-title">Research & Innovation Conference</h1>
+        <div class="hero-buttons">
+          <a href="https://cmt3.research.microsoft.com/ICAST2026" target="_blank" class="btn-primary">Submit Paper</a>
+          <a href="#topics" class="btn-secondary">View Topics</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider Navigation -->
+    <button class="slider-nav slider-prev" id="sliderPrev">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="slider-nav slider-next" id="sliderNext">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </section>
+
+  <!-- Countdown Section -->
+  <section class="countdown-section">
+    <div class="container">
+      <h2 class="countdown-title">Event Will Start In</h2>
+      <div class="countdown-wrapper">
+        <div class="countdown-item">
+          <div class="countdown-number" id="days">0</div>
+          <div class="countdown-label">Days</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="hours">00</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="minutes">00</div>
+          <div class="countdown-label">Minutes</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="seconds">00</div>
+          <div class="countdown-label">Seconds</div>
+        </div>
+      </div>
+      <a href="#" class="btn-calendar" id="addToCalendar">
+        <i class="fas fa-calendar-plus"></i>
+        Add to My Calendar
+      </a>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="about-section">
+  <!-- Why Choose Us Section -->
+  <section class="features-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge">Conference Overview</span>
-        <h2 class="section-title">About ICAST 2026</h2>
+        <h2 class="section-title">Why You Choose Us?</h2>
+        <div class="section-title-underline"></div>
+        <p class="section-subtitle">IEEE Ghana Section International Conference on Adaptive Science & Technology</p>
       </div>
 
-      <div class="about-grid">
-        <div class="about-content">
-          <div class="about-text">
-            <h3>Background & Introduction</h3>
-            <p>The IEEE International Conference on Adaptive Science & Technology is a double-blind, annually organized conference covering Information Technology and Computer Science domains: Communication, Networking and Broadcast Technologies, Components, Circuits, Devices and Systems, Computing and Processing, Fields, Waves and Electromagnetics, Power, Energy and Industry Applications, Robotics and Control Systems.</p>
-            <p>ICAST 2026 is accepting submissions for the 11th edition, sponsored by the IEEE Ghana Section. Conference proceedings are indexed in <strong>IEEE Xplore</strong> and <strong>Scopus</strong>.</p>
-            <div class="info-highlight">
-              <i class="fas fa-external-link-alt"></i>
-              <div>
-                <strong>Past Publications</strong>
-                <p>View previous ICAST publications in <a href="https://www.ieee.org/publications/rights/multi-sub-guidelines-intro.html" target="_blank">IEEE Xplore</a></p>
-              </div>
-            </div>
-            <div class="info-highlight success">
-              <i class="fas fa-file-pdf"></i>
-              <div>
-                <strong>Paper Submission Guide</strong>
-                <p>Learn how to submit via <a href="https://ieee-pdf-express.org/External/UsingIEEEPDFeXpress" target="_blank">IEEE PDF eXpress</a></p>
-              </div>
-            </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3 class="feature-title">Get Inspired</h3>
+          <p class="feature-text">Learn from world-class researchers and innovators presenting cutting-edge solutions in science and technology.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-images"></i>
+          </div>
+          <h3 class="feature-title">Meet New Faces</h3>
+          <p class="feature-text">Connect with researchers, academics, and industry professionals from around the globe.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-envelope-open"></i>
+          </div>
+          <h3 class="feature-title">Fresh Tech Insights</h3>
+          <p class="feature-text">Discover the latest advancements in AI, telecommunications, robotics, and computing technologies.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3 class="feature-title">Networking Session</h3>
+          <p class="feature-text">Participate in dedicated networking events designed to foster meaningful professional connections.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <h3 class="feature-title">Global Event</h3>
+          <p class="feature-text">Join participants from over 30 countries in this premier international IEEE conference in Africa.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h3 class="feature-title">IEEE Indexed</h3>
+          <p class="feature-text">All accepted papers are published in IEEE Xplore and indexed in Scopus for maximum visibility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About This Events Section -->
+  <section id="about" class="about-events-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About This Event</h2>
+        <div class="section-title-underline"></div>
+        <p class="section-subtitle">IEEE Ghana Section International Conference on Adaptive Science & Technology</p>
+      </div>
+
+      <div class="events-grid">
+        <div class="event-card">
+          <div class="event-card-image">
+            <img src="./images/venue-gallery/1.jpg" alt="Our Mission">
+          </div>
+          <div class="event-card-content">
+            <h3 class="event-card-title">Conference Background</h3>
+            <p class="event-card-text">ICAST is a double-blind, annually organized IEEE conference covering Information Technology and Computer Science domains across multiple technical areas.</p>
+            <a href="#topics" class="btn-readmore">Read More</a>
           </div>
         </div>
 
-        <div class="about-sidebar">
-          <div class="info-card">
-            <div class="info-card-icon">
-              <i class="fas fa-university"></i>
-            </div>
-            <h4>Venue</h4>
-            <p>Academic City University</p>
-            <p class="location-text">Accra, Ghana</p>
+        <div class="event-card">
+          <div class="event-card-image">
+            <img src="./images/venue-gallery/2.jpg" alt="What You'll Learn">
           </div>
-
-          <div class="info-card">
-            <div class="info-card-icon">
-              <i class="fas fa-calendar-check"></i>
-            </div>
-            <h4>Event Dates</h4>
-            <p>Monday to Wednesday</p>
-            <p class="location-text">24-26 October 2026</p>
+          <div class="event-card-content">
+            <h3 class="event-card-title">What You Will Learn?</h3>
+            <p class="event-card-text">Explore cutting-edge research in Communications, Computing, Power Systems, Robotics, AI, and emerging technologies from global experts.</p>
+            <a href="#schedules" class="btn-readmore">Read More</a>
           </div>
+        </div>
 
-          <div class="info-card">
-            <div class="info-card-icon">
-              <i class="fas fa-book"></i>
-            </div>
-            <h4>Conference Type</h4>
-            <p>Double-blind review</p>
-            <p class="location-text">IEEE indexed</p>
+        <div class="event-card">
+          <div class="event-card-image">
+            <img src="./images/venue-gallery/3.jpg" alt="Benefits">
+          </div>
+          <div class="event-card-content">
+            <h3 class="event-card-title">What Are The Benefits?</h3>
+            <p class="event-card-text">Get your research published in IEEE Xplore, network with global researchers, and gain insights from 50+ expert speakers and 12 workshops.</p>
+            <a href="#pricing" class="btn-readmore">Read More</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Important Dates Timeline -->
+  <!-- Event Info Banner -->
+  <section class="event-info-banner">
+    <div class="container">
+      <div class="event-info-grid">
+        <div class="event-info-item">
+          <div class="event-info-icon">
+            <i class="fas fa-gift"></i>
+          </div>
+          <h4 class="event-info-title">Academic City University</h4>
+          <p class="event-info-text">Accra, Ghana</p>
+        </div>
+
+        <div class="event-info-item">
+          <div class="event-info-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h4 class="event-info-title">October 24 - 26, 2026</h4>
+          <p class="event-info-text">09:00 AM - 05:00 PM</p>
+        </div>
+
+        <div class="event-info-item">
+          <div class="event-info-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h4 class="event-info-title">500 Available Seats</h4>
+          <p class="event-info-text">Register now! Limited spots</p>
+        </div>
+
+        <div class="event-info-item">
+          <div class="event-info-icon">
+            <i class="fas fa-coffee"></i>
+          </div>
+          <h4 class="event-info-title">Free Lunch & Snacks</h4>
+          <p class="event-info-text">Don't miss it</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Schedules Section -->
+  <section id="schedules" class="schedules-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Event Schedules</h2>
+        <div class="section-title-underline"></div>
+        <p class="section-subtitle">Three days of presentations, workshops, and networking at Academic City University</p>
+      </div>
+
+      <div class="schedule-content">
+        <div class="schedule-days">
+          <div class="schedule-day active" data-day="day1">
+            <div class="schedule-day-name">Saturday</div>
+            <div class="schedule-day-date">24 October</div>
+          </div>
+          <div class="schedule-day" data-day="day2">
+            <div class="schedule-day-name">Sunday</div>
+            <div class="schedule-day-date">25 October</div>
+          </div>
+          <div class="schedule-day" data-day="day3">
+            <div class="schedule-day-name">Monday</div>
+            <div class="schedule-day-date">26 October</div>
+          </div>
+        </div>
+
+        <div class="schedule-events">
+          <!-- Day 1 -->
+          <div class="schedule-event active" id="day1">
+            <div class="schedule-item">
+              <div class="schedule-speaker-img">
+                <img src="./images/speakers/minister.webp" alt="Dr Yaw Osei Adutwum">
+              </div>
+              <div class="schedule-item-content">
+                <span class="schedule-time">9:00am - 10:30am</span>
+                <h4 class="schedule-item-title">Opening Ceremony & Keynote Address</h4>
+                <p class="schedule-speaker-name">Dr Yaw Osei Adutwum - Minister of Education</p>
+                <p class="schedule-description">Welcome address and keynote speech on the role of technology in Ghana's educational transformation and national development.</p>
+                <p class="schedule-location"><i class="fas fa-map-marker-alt"></i> Main Auditorium, Academic City University</p>
+              </div>
+            </div>
+
+            <div class="schedule-item">
+              <div class="schedule-speaker-img">
+                <img src="./images/speakers/prof.jpg" alt="Ing. Prof. Issaka Yakubu">
+              </div>
+              <div class="schedule-item-content">
+                <span class="schedule-time">11:00am - 12:30pm</span>
+                <h4 class="schedule-item-title">Geomatics and Spatial Technologies</h4>
+                <p class="schedule-speaker-name">Ing. Prof. Issaka Yakubu - Conference Chair</p>
+                <p class="schedule-description">Advances in Land Policy, Mine Surveying, GNSS applications, and Geo-Information Management for sustainable development.</p>
+                <p class="schedule-location"><i class="fas fa-map-marker-alt"></i> Conference Hall A, Academic City University</p>
+              </div>
+            </div>
+
+            <div class="schedule-item">
+              <div class="schedule-speaker-img">
+                <img src="./images/speakers/george_eduful__1___1___1_-removebg-preview (1).png" alt="Dr. George Eduful">
+              </div>
+              <div class="schedule-item-content">
+                <span class="schedule-time">2:00pm - 3:30pm</span>
+                <h4 class="schedule-item-title">Communications & Network Technologies</h4>
+                <p class="schedule-speaker-name">Dr. George Eduful - Conference Co-Chair</p>
+                <p class="schedule-description">Exploring advancements in wireless communications, telecommunications, and network infrastructure.</p>
+                <p class="schedule-location"><i class="fas fa-map-marker-alt"></i> Conference Hall B, Academic City University</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 2 -->
+          <div class="schedule-event" id="day2">
+            <div class="schedule-item">
+              <div class="schedule-speaker-img">
+                <img src="./images/speakers/civil aviation.jpg" alt="Ing. Charles Kraikue">
+              </div>
+              <div class="schedule-item-content">
+                <span class="schedule-time">9:00am - 10:30am</span>
+                <h4 class="schedule-item-title">Aviation Technology & Innovation</h4>
+                <p class="schedule-speaker-name">Ing. Charles Kraikue - Director General, Ghana Civil Aviation Training Centre</p>
+                <p class="schedule-description">The future of aviation technology in Africa and opportunities for research collaboration.</p>
+                <p class="schedule-location"><i class="fas fa-map-marker-alt"></i> Main Auditorium, Academic City University</p>
+              </div>
+            </div>
+
+            <div class="schedule-item">
+              <div class="schedule-speaker-img">
+                <img src="./images/speakers/placeuser.png" alt="Workshop Session">
+              </div>
+              <div class="schedule-item-content">
+                <span class="schedule-time">11:00am - 12:30pm</span>
+                <h4 class="schedule-item-title">AI and Machine Learning Workshop</h4>
+                <p class="schedule-speaker-name">Technical Committee</p>
+                <p class="schedule-description">Hands-on workshop covering practical applications of artificial intelligence and machine learning in research.</p>
+                <p class="schedule-location"><i class="fas fa-map-marker-alt"></i> Computer Lab 1, Academic City University</p>
+              </div>
+            </div>
+
+            <div class="schedule-item">
+              <div class="schedule-speaker-img">
+                <img src="./images/speakers/placeuser.png" alt="Paper Presentations">
+              </div>
+              <div class="schedule-item-content">
+                <span class="schedule-time">2:00pm - 5:00pm</span>
+                <h4 class="schedule-item-title">Paper Presentation Sessions</h4>
+                <p class="schedule-speaker-name">Various Authors</p>
+                <p class="schedule-description">Parallel sessions featuring accepted paper presentations across multiple tracks.</p>
+                <p class="schedule-location"><i class="fas fa-map-marker-alt"></i> Multiple Rooms, Academic City University</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 3 -->
+          <div class="schedule-event" id="day3">
+            <div class="schedule-item">
+              <div class="schedule-speaker-img">
+                <img src="./images/speakers/placeuser.png" alt="Industry Panel">
+              </div>
+              <div class="schedule-item-content">
+                <span class="schedule-time">9:00am - 10:30am</span>
+                <h4 class="schedule-item-title">Industry Panel Discussion</h4>
+                <p class="schedule-speaker-name">Industry Leaders</p>
+                <p class="schedule-description">Panel discussion on bridging the gap between academic research and industry applications.</p>
+                <p class="schedule-location"><i class="fas fa-map-marker-alt"></i> Main Auditorium, Academic City University</p>
+              </div>
+            </div>
+
+            <div class="schedule-item">
+              <div class="schedule-speaker-img">
+                <img src="./images/speakers/placeuser.png" alt="Doctoral Consortium">
+              </div>
+              <div class="schedule-item-content">
+                <span class="schedule-time">11:00am - 12:30pm</span>
+                <h4 class="schedule-item-title">Doctoral Consortium</h4>
+                <p class="schedule-speaker-name">PhD Researchers</p>
+                <p class="schedule-description">Special session for doctoral students to present their research and receive feedback from senior researchers.</p>
+                <p class="schedule-location"><i class="fas fa-map-marker-alt"></i> Conference Hall C, Academic City University</p>
+              </div>
+            </div>
+
+            <div class="schedule-item">
+              <div class="schedule-speaker-img">
+                <img src="./images/speakers/prof.jpg" alt="Closing Ceremony">
+              </div>
+              <div class="schedule-item-content">
+                <span class="schedule-time">3:00pm - 5:00pm</span>
+                <h4 class="schedule-item-title">Closing Ceremony & Awards</h4>
+                <p class="schedule-speaker-name">Organizing Committee</p>
+                <p class="schedule-description">Best paper awards, closing remarks, and announcement of ICAST 2027 details.</p>
+                <p class="schedule-location"><i class="fas fa-map-marker-alt"></i> Main Auditorium, Academic City University</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Speakers Section -->
+  <section id="speakers" class="speakers-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Who's Speaking?</h2>
+        <div class="section-title-underline"></div>
+        <p class="section-subtitle">Distinguished experts leading ICAST 2026</p>
+      </div>
+
+      <div class="speakers-grid">
+        <div class="speaker-card">
+          <div class="speaker-image">
+            <img src="./images/speakers/minister.webp" alt="Dr Yaw Osei Adutwum">
+            <div class="speaker-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="speaker-info">
+            <h3 class="speaker-name">Dr Yaw Osei Adutwum</h3>
+            <p class="speaker-title">Minister of Education, Ghana</p>
+          </div>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-image">
+            <img src="./images/speakers/prof.jpg" alt="Ing. Prof. Issaka Yakubu">
+            <div class="speaker-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="speaker-info">
+            <h3 class="speaker-name">Ing. Prof. Issaka Yakubu</h3>
+            <p class="speaker-title">Conference Chair, UMaT</p>
+          </div>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-image">
+            <img src="./images/speakers/george_eduful__1___1___1_-removebg-preview (1).png" alt="Dr. George Eduful">
+            <div class="speaker-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="speaker-info">
+            <h3 class="speaker-name">Dr. George Eduful</h3>
+            <p class="speaker-title">Conference Co-Chair</p>
+          </div>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-image">
+            <img src="./images/speakers/civil aviation.jpg" alt="Ing. Charles Kraikue">
+            <div class="speaker-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="speaker-info">
+            <h3 class="speaker-name">Ing. Charles Kraikue</h3>
+            <p class="speaker-title">Director General, GCATC</p>
+          </div>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-image">
+            <img src="./images/speakers/Ing Isaac Kweku Boakye.jpeg" alt="Ing. Isaac Kweku Boakye">
+            <div class="speaker-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="speaker-info">
+            <h3 class="speaker-name">Ing. Isaac Kweku Boakye</h3>
+            <p class="speaker-title">Industry Expert</p>
+          </div>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-image">
+            <img src="./images/speakers/1.jpg" alt="Speaker">
+            <div class="speaker-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="speaker-info">
+            <h3 class="speaker-name">Technical Committee</h3>
+            <p class="speaker-title">Program Committee</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Event Gallery</h2>
+        <div class="section-title-underline"></div>
+        <p class="section-subtitle">Highlights from previous ICAST conferences</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="./images/venue-gallery/1.jpg" alt="Gallery Image 1">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/venue-gallery/2.jpg" alt="Gallery Image 2">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/venue-gallery/3.jpg" alt="Gallery Image 3">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/venue-gallery/4.jpg" alt="Gallery Image 4">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/venue-gallery/5.jpg" alt="Gallery Image 5">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/venue-gallery/6.jpg" alt="Gallery Image 6">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/venue-gallery/7.jpg" alt="Gallery Image 7">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/venue-gallery/8.jpg" alt="Gallery Image 8">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call for Papers / Topics Section -->
+  <section id="topics" class="topics-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Call For Papers</h2>
+        <div class="section-title-underline"></div>
+        <p class="section-subtitle">We invite original research submissions in the following areas</p>
+      </div>
+
+      <div class="topics-grid">
+        <div class="topic-card">
+          <div class="topic-icon">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <h3 class="topic-title">Natural Sciences & Computing</h3>
+          <ul class="topic-list">
+            <li>Bio-computing & Biotechnology</li>
+            <li>Computational Biology</li>
+            <li>Computational Chemistry & Physics</li>
+            <li>Computational Mathematics</li>
+            <li>E-Agriculture</li>
+            <li>Mathematical Models & Simulations</li>
+          </ul>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon">
+            <i class="fas fa-broadcast-tower"></i>
+          </div>
+          <h3 class="topic-title">Communications</h3>
+          <ul class="topic-list">
+            <li>Green communications</li>
+            <li>Telecommunications</li>
+            <li>Wireless and fibre networks</li>
+            <li>Satellite communications</li>
+            <li>Software-Defined Radios</li>
+            <li>LTE networks</li>
+            <li>Computer Networking</li>
+          </ul>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3 class="topic-title">Computer Engineering & Science</h3>
+          <ul class="topic-list">
+            <li>Information Security & Forensics</li>
+            <li>Cloud & Green Computing</li>
+            <li>Signal & Image Processing</li>
+            <li>Artificial Intelligence</li>
+            <li>Human Computer Interaction</li>
+            <li>Mobile Technologies</li>
+            <li>Remote Sensing</li>
+          </ul>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon">
+            <i class="fas fa-industry"></i>
+          </div>
+          <h3 class="topic-title">Applied Computing</h3>
+          <ul class="topic-list">
+            <li>ICTs in Industrialization</li>
+            <li>ICT in Energy Applications</li>
+            <li>E-Learning & Distance Education</li>
+            <li>E-government & E-governance</li>
+            <li>eHealth & mHealth</li>
+            <li>Wireless Sensor Networks</li>
+            <li>ICT for Innovation</li>
+          </ul>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3 class="topic-title">Electrical & Electronic Engineering</h3>
+          <ul class="topic-list">
+            <li>Electronics Design</li>
+            <li>Smart Utility Systems</li>
+            <li>Power line communications</li>
+            <li>Biomedical engineering</li>
+            <li>Consumer electronics</li>
+            <li>Signal propagation modeling</li>
+          </ul>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3 class="topic-title">Information Systems & E-Business</h3>
+          <ul class="topic-list">
+            <li>Cryptocurrency</li>
+            <li>Decision Support Systems</li>
+            <li>E-Banking & E-Commerce</li>
+            <li>E-Marketing</li>
+            <li>Enterprise Systems</li>
+            <li>Expert Systems</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Important Dates Section -->
   <section id="dates" class="dates-section">
     <div class="container">
-      <div class="section-header centered">
-        <span class="section-badge">Timeline</span>
+      <div class="section-header">
         <h2 class="section-title">Important Dates</h2>
+        <div class="section-title-underline"></div>
         <p class="section-subtitle">Mark your calendar with these critical deadlines</p>
       </div>
 
@@ -364,7 +742,7 @@
 
         <div class="timeline-item">
           <div class="timeline-marker">
-            <i class="fas fa-file-edit"></i>
+            <i class="fas fa-file-alt"></i>
           </div>
           <div class="timeline-content">
             <span class="timeline-date">24th September 2026</span>
@@ -386,7 +764,7 @@
 
         <div class="timeline-item">
           <div class="timeline-marker">
-            <i class="fas fa-users"></i>
+            <i class="fas fa-calendar-check"></i>
           </div>
           <div class="timeline-content">
             <span class="timeline-date">24th - 26th October 2026</span>
@@ -398,150 +776,12 @@
     </div>
   </section>
 
-  <!-- Call for Papers -->
-  <section id="topics" class="topics-section">
-    <div class="container">
-      <div class="section-header centered">
-        <span class="section-badge">Research Areas</span>
-        <h2 class="section-title">Call for Papers</h2>
-        <p class="section-subtitle">We invite original research submissions in the following areas</p>
-      </div>
-
-      <div class="topics-grid">
-        <div class="topic-card">
-          <div class="topic-icon">
-            <i class="fas fa-microchip"></i>
-          </div>
-          <h3>Natural Sciences & Computing</h3>
-          <ul class="topic-list">
-            <li>Bio-computing & Biotechnology</li>
-            <li>Computational Biology</li>
-            <li>Computational Chemistry & Physics</li>
-            <li>Computational Mathematics</li>
-            <li>E-Agriculture</li>
-            <li>Mathematical Models & Simulations</li>
-          </ul>
-        </div>
-
-        <div class="topic-card">
-          <div class="topic-icon">
-            <i class="fas fa-broadcast-tower"></i>
-          </div>
-          <h3>Communications</h3>
-          <ul class="topic-list">
-            <li>Green communications</li>
-            <li>Telecommunications</li>
-            <li>Wireless and fibre networks</li>
-            <li>Satellite communications</li>
-            <li>Software-Defined Radios</li>
-            <li>LTE networks</li>
-            <li>Computer Networking</li>
-          </ul>
-        </div>
-
-        <div class="topic-card">
-          <div class="topic-icon">
-            <i class="fas fa-laptop-code"></i>
-          </div>
-          <h3>Computer Engineering & Science</h3>
-          <ul class="topic-list">
-            <li>Information Security & Forensics</li>
-            <li>Cloud & Green Computing</li>
-            <li>Signal & Image Processing</li>
-            <li>Artificial Intelligence</li>
-            <li>Human Computer Interaction</li>
-            <li>Mobile Technologies</li>
-            <li>Remote Sensing</li>
-          </ul>
-        </div>
-
-        <div class="topic-card">
-          <div class="topic-icon">
-            <i class="fas fa-industry"></i>
-          </div>
-          <h3>Applied Computing</h3>
-          <ul class="topic-list">
-            <li>ICTs in Industrialization</li>
-            <li>ICT in Energy Applications</li>
-            <li>E-Learning & Distance Education</li>
-            <li>E-government & E-governance</li>
-            <li>eHealth & mHealth</li>
-            <li>Wireless Sensor Networks</li>
-            <li>ICT for Innovation</li>
-          </ul>
-        </div>
-
-        <div class="topic-card">
-          <div class="topic-icon">
-            <i class="fas fa-bolt"></i>
-          </div>
-          <h3>Electrical & Electronic Engineering</h3>
-          <ul class="topic-list">
-            <li>Electronics Design</li>
-            <li>Smart Utility Systems</li>
-            <li>Power line communications</li>
-            <li>Biomedical engineering</li>
-            <li>Consumer electronics</li>
-            <li>Signal propagation modeling</li>
-          </ul>
-        </div>
-
-        <div class="topic-card">
-          <div class="topic-icon">
-            <i class="fas fa-database"></i>
-          </div>
-          <h3>Information Systems & E-Business</h3>
-          <ul class="topic-list">
-            <li>Cryptocurrency</li>
-            <li>Decision Support Systems</li>
-            <li>E-Banking & E-Commerce</li>
-            <li>E-Marketing</li>
-            <li>Enterprise Systems</li>
-            <li>Expert Systems</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="keywords-section">
-        <h3>Keywords & Fields of Interest</h3>
-        <div class="keywords-grid">
-          <div class="keyword-group">
-            <h4>Research Keywords</h4>
-            <div class="tag-cloud">
-              <span class="tag">Telecommunications</span>
-              <span class="tag">Wireless Communications</span>
-              <span class="tag">Computer Science</span>
-              <span class="tag">Electrical Engineering</span>
-              <span class="tag">Software Engineering</span>
-              <span class="tag">Power Systems</span>
-              <span class="tag">ICT</span>
-              <span class="tag">Information Systems</span>
-            </div>
-          </div>
-          <div class="keyword-group">
-            <h4>Interest Areas</h4>
-            <div class="tag-cloud">
-              <span class="tag">Networking</span>
-              <span class="tag">Circuits & Devices</span>
-              <span class="tag">Computing</span>
-              <span class="tag">Electromagnetics</span>
-              <span class="tag">Energy Applications</span>
-              <span class="tag">Cryptography</span>
-              <span class="tag">Robotics</span>
-              <span class="tag">Control Systems</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Paper Submission Guidelines -->
+  <!-- Paper Submission Section -->
   <section id="submission" class="submission-section">
     <div class="container">
-      <div class="section-header centered">
-        <span class="section-badge">Guidelines</span>
+      <div class="section-header">
         <h2 class="section-title">Paper Submission</h2>
+        <div class="section-title-underline"></div>
         <p class="section-subtitle">Requirements and process for submitting your research</p>
       </div>
 
@@ -620,73 +860,221 @@
         <a href="https://cmt3.research.microsoft.com/ICAST2026" target="_blank" class="btn-primary large">
           <i class="fas fa-paper-plane"></i>
           <span>Submit Your Paper</span>
-          <i class="fas fa-external-link-alt"></i>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Keynote Speakers -->
-  <section id="speakers" class="speakers-section">
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section">
     <div class="container">
-      <div class="section-header centered">
-        <span class="section-badge">Leadership</span>
-        <h2 class="section-title">Keynote Speakers</h2>
-        <p class="section-subtitle">Distinguished experts leading ICAST 2026</p>
+      <div class="section-header">
+        <h2 class="section-title">Ask Question?</h2>
+        <div class="section-title-underline"></div>
+        <p class="section-subtitle">Frequently Asked Questions about ICAST 2026</p>
       </div>
 
-      <div class="speakers-grid">
-        <div class="speaker-card featured">
-          <div class="speaker-image">
-            <img src="images/speakers/minister.webp" alt="Dr Yaw Osei Adutwum">
-            <div class="speaker-overlay">
-              <span class="speaker-role">Keynote Speaker</span>
+      <div class="faq-grid">
+        <div class="faq-column">
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-pencil-alt faq-icon"></i>
+              <span class="faq-question-text">How do I submit my paper?</span>
+              <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+              <p class="faq-answer-content">All paper submissions must be made through the Microsoft CMT platform. Create an account, follow the submission guidelines, and upload your paper in IEEE format.</p>
             </div>
           </div>
-          <div class="speaker-info">
-            <h3>Dr Yaw Osei Adutwum</h3>
-            <p class="speaker-title">Minister of Education</p>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-pencil-alt faq-icon"></i>
+              <span class="faq-question-text">Which payment methods do you accept?</span>
+              <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+              <p class="faq-answer-content">We accept credit cards, bank transfers, and mobile money payments. Detailed payment instructions will be provided upon registration.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-pencil-alt faq-icon"></i>
+              <span class="faq-question-text">What documents should I bring to the conference?</span>
+              <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+              <p class="faq-answer-content">Please bring your registration confirmation, valid ID, and any presentation materials. International attendees should also carry their visa documents and passport.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-pencil-alt faq-icon"></i>
+              <span class="faq-question-text">Who can join at the live event venue?</span>
+              <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+              <p class="faq-answer-content">The conference is open to registered participants, including researchers, academics, students, and industry professionals. All attendees must complete the registration process.</p>
+            </div>
           </div>
         </div>
 
-        <div class="speaker-card">
-          <div class="speaker-image">
-            <img src="images/speakers/prof.jpg" alt="Ing. Prof. Issaka Yakubu">
-            <div class="speaker-overlay">
-              <span class="speaker-role">Conference Chair</span>
+        <div class="faq-column">
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-pencil-alt faq-icon"></i>
+              <span class="faq-question-text">Will papers be published in IEEE Xplore?</span>
+              <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+              <p class="faq-answer-content">Yes, all accepted and presented papers will be published in IEEE Xplore and indexed in Scopus, ensuring maximum visibility for your research.</p>
             </div>
           </div>
-          <div class="speaker-info">
-            <h3>Ing. Prof. Issaka Yakubu</h3>
-            <p class="speaker-title">Conference Chairperson</p>
-            <p class="speaker-bio">Associate Professor of Geomatic Engineering at UMaT, Tarkwa-Ghana. Expert in Land Policy, Mine Surveying, GNSS applications, and Geo-Information Management.</p>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-pencil-alt faq-icon"></i>
+              <span class="faq-question-text">Is virtual attendance available?</span>
+              <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+              <p class="faq-answer-content">Yes, we offer virtual attendance options for those who cannot attend in person. Virtual participants can present their papers remotely and access all sessions.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-pencil-alt faq-icon"></i>
+              <span class="faq-question-text">What is the registration fee?</span>
+              <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+              <p class="faq-answer-content">Registration fees vary based on category (IEEE member, non-member, student) and timing (early bird vs. regular). Please visit the pricing section for detailed information.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-pencil-alt faq-icon"></i>
+              <span class="faq-question-text">Are there accommodation options nearby?</span>
+              <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+              <p class="faq-answer-content">Yes, there are several hotels near Academic City University including Holiday In Hotel, Labadi Beach Inn, and Cloud9 Luxury Apartments. Special rates may be available for conference attendees.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Registration Pricing</h2>
+        <div class="section-title-underline"></div>
+        <p class="section-subtitle">Choose the registration package that suits you best</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-type">Student</h3>
+            <div class="pricing-amount"><span>$</span>150</div>
+            <p class="pricing-period">IEEE Member</p>
+          </div>
+          <ul class="pricing-features">
+            <li>Conference Access (3 Days)</li>
+            <li>All Paper Sessions</li>
+            <li>Workshop Participation</li>
+            <li>Certificate of Attendance</li>
+            <li>Lunch & Refreshments</li>
+            <li>Conference Materials</li>
+          </ul>
+          <div class="pricing-footer">
+            <a href="./register.php" class="btn-pricing">Register Now</a>
           </div>
         </div>
 
-        <div class="speaker-card">
-          <div class="speaker-image">
-            <img src="images/speakers/george_eduful__1___1___1_-removebg-preview (1).png" alt="Dr. George Eduful">
-            <div class="speaker-overlay">
-              <span class="speaker-role">Co-Chair</span>
-            </div>
+        <div class="pricing-card featured">
+          <div class="pricing-header">
+            <h3 class="pricing-type">Professional</h3>
+            <div class="pricing-amount"><span>$</span>350</div>
+            <p class="pricing-period">IEEE Member</p>
           </div>
-          <div class="speaker-info">
-            <h3>Dr. George Eduful</h3>
-            <p class="speaker-title">Conference Co-Chairperson</p>
+          <ul class="pricing-features">
+            <li>Conference Access (3 Days)</li>
+            <li>All Paper Sessions</li>
+            <li>Workshop Participation</li>
+            <li>Certificate of Attendance</li>
+            <li>Lunch & Refreshments</li>
+            <li>Conference Materials</li>
+            <li>Networking Dinner</li>
+            <li>Up to 3 Paper Submissions</li>
+          </ul>
+          <div class="pricing-footer">
+            <a href="./register.php" class="btn-pricing">Register Now</a>
           </div>
         </div>
 
-        <div class="speaker-card">
-          <div class="speaker-image">
-            <img src="images/speakers/civil aviation.jpg" alt="Ing. Charles Kraikue">
-            <div class="speaker-overlay">
-              <span class="speaker-role">Industry Expert</span>
-            </div>
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-type">Non-Member</h3>
+            <div class="pricing-amount"><span>$</span>450</div>
+            <p class="pricing-period">Regular Rate</p>
           </div>
-          <div class="speaker-info">
-            <h3>Ing. Charles Kraikue</h3>
-            <p class="speaker-title">Director General, Ghana Civil Aviation Training Centre</p>
+          <ul class="pricing-features">
+            <li>Conference Access (3 Days)</li>
+            <li>All Paper Sessions</li>
+            <li>Workshop Participation</li>
+            <li>Certificate of Attendance</li>
+            <li>Lunch & Refreshments</li>
+            <li>Conference Materials</li>
+          </ul>
+          <div class="pricing-footer">
+            <a href="./register.php" class="btn-pricing">Register Now</a>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsors Section -->
+  <section id="sponsors" class="sponsors-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Sponsors</h2>
+        <div class="section-title-underline"></div>
+        <p class="section-subtitle">Supported by leading organizations in technology and research</p>
+      </div>
+
+      <div class="sponsors-grid">
+        <div class="sponsor-item">
+          <img src="./images/sponsors/1.png" alt="IEEE Ghana Section">
+        </div>
+        <div class="sponsor-item">
+          <img src="./images/sponsors/2.png" alt="Sponsor">
+        </div>
+        <div class="sponsor-item">
+          <img src="./images/sponsors/GCAA Ghana.png" alt="GCAA Ghana">
+        </div>
+        <div class="sponsor-item">
+          <img src="./images/sponsors/ieee-region-8.png" alt="IEEE Region 8">
+        </div>
+        <div class="sponsor-item">
+          <img src="./images/sponsors/IEEE-CS_LogoTM-orange.png" alt="IEEE Computer Society">
+        </div>
+        <div class="sponsor-item">
+          <img src="./images/sponsors/yp.png" alt="IEEE Young Professionals">
+        </div>
+        <div class="sponsor-item">
+          <img src="./images/sponsors/23-CA-2-003-FP- IEEE Humanitarian Technologies Board Wordmark-Color-RGB.jpg" alt="IEEE Humanitarian Technologies">
+        </div>
+        <div class="sponsor-item">
+          <img src="./images/sponsors/comsoc.jpeg" alt="IEEE Communications Society">
         </div>
       </div>
     </div>
@@ -695,10 +1083,10 @@
   <!-- Venue Section -->
   <section id="venue" class="venue-section">
     <div class="container">
-      <div class="section-header centered">
-        <span class="section-badge">Location</span>
+      <div class="section-header">
         <h2 class="section-title">Event Venue</h2>
-        <p class="section-subtitle">Academic City University, Accra</p>
+        <div class="section-title-underline"></div>
+        <p class="section-subtitle">Academic City University, Accra, Ghana</p>
       </div>
 
       <div class="venue-grid">
@@ -711,46 +1099,44 @@
             <p>Nestled in the heart of Accra, our conference venue offers an unparalleled blend of convenience and sophistication. With state-of-the-art facilities and breathtaking views, it provides the perfect backdrop for an engaging and memorable gathering.</p>
 
             <div class="venue-features">
-              <div class="feature-item">
+              <div class="venue-feature-item">
                 <i class="fas fa-wifi"></i>
                 <span>High-Speed WiFi</span>
               </div>
-              <div class="feature-item">
+              <div class="venue-feature-item">
                 <i class="fas fa-video"></i>
                 <span>AV Equipment</span>
               </div>
-              <div class="feature-item">
+              <div class="venue-feature-item">
                 <i class="fas fa-utensils"></i>
                 <span>Catering Services</span>
               </div>
-              <div class="feature-item">
+              <div class="venue-feature-item">
                 <i class="fas fa-parking"></i>
                 <span>Parking Available</span>
               </div>
             </div>
 
-            <div class="hotels-list">
-              <h4>Nearby Hotels</h4>
-              <div class="hotel-item">
-                <i class="fas fa-hotel"></i>
-                <div>
-                  <strong>Holiday In Hotel</strong>
-                  <span>0.4 miles • ★★★★★</span>
-                </div>
+            <h4 class="hotels-title">Nearby Hotels</h4>
+            <div class="hotel-item">
+              <i class="fas fa-hotel"></i>
+              <div>
+                <strong>Holiday In Hotel</strong>
+                <span>0.4 miles</span>
               </div>
-              <div class="hotel-item">
-                <i class="fas fa-hotel"></i>
-                <div>
-                  <strong>Labadi Beach Inn</strong>
-                  <span>0.5 miles • ★★★★½</span>
-                </div>
+            </div>
+            <div class="hotel-item">
+              <i class="fas fa-hotel"></i>
+              <div>
+                <strong>Labadi Beach Inn</strong>
+                <span>0.5 miles</span>
               </div>
-              <div class="hotel-item">
-                <i class="fas fa-hotel"></i>
-                <div>
-                  <strong>Cloud9 Luxury Apartments</strong>
-                  <span>0.6 miles • ★★★★</span>
-                </div>
+            </div>
+            <div class="hotel-item">
+              <i class="fas fa-hotel"></i>
+              <div>
+                <strong>Cloud9 Luxury Apartments</strong>
+                <span>0.6 miles</span>
               </div>
             </div>
           </div>
@@ -760,7 +1146,7 @@
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31766.01982374!2d-0.24!3d5.61!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzYnMzYuMCJOIDDCsDEzJzU5LjMiVw!5e0!3m2!1sen!2sgh!4v1700000000000!5m2!1sen!2sgh"
             width="100%"
-            height="600"
+            height="500"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
@@ -771,53 +1157,12 @@
     </div>
   </section>
 
-  <!-- Sponsors Section -->
-  <section id="sponsors" class="sponsors-section">
-    <div class="container">
-      <div class="section-header centered">
-        <span class="section-badge">Partners</span>
-        <h2 class="section-title">Our Sponsors</h2>
-        <p class="section-subtitle">Supported by leading organizations in technology and research</p>
-      </div>
-
-      <div class="sponsors-grid">
-        <div class="sponsor-item">
-          <img src="images/sponsors/1.png" alt="Sponsor">
-        </div>
-        <div class="sponsor-item">
-          <img src="images/sponsors/2.png" alt="Sponsor">
-        </div>
-        <div class="sponsor-item">
-          <img src="images/sponsors/GCAA Ghana.png" alt="GCAA Ghana">
-        </div>
-        <div class="sponsor-item">
-          <img src="images/sponsors/ieee-region-8.png" alt="IEEE Region 8">
-        </div>
-        <div class="sponsor-item">
-          <img src="images/sponsors/IEEE-CS_LogoTM-orange.png" alt="IEEE Computer Society">
-        </div>
-        <div class="sponsor-item">
-          <img src="images/sponsors/yp.png" alt="Young Professionals">
-        </div>
-        <div class="sponsor-item">
-          <img src="images/sponsors/23-CA-2-003-FP- IEEE Humanitarian Technologies Board Wordmark-Color-RGB.jpg" alt="IEEE Humanitarian Technologies">
-        </div>
-        <div class="sponsor-item">
-          <img src="images/sponsors/comsoc.jpeg" alt="IEEE Communications Society">
-        </div>
-        <div class="sponsor-item">
-          <img src="images/sponsors/ieee_icast.jpg" alt="IEEE ICAST">
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Contact Section -->
   <section id="contact" class="contact-section">
     <div class="container">
-      <div class="section-header centered">
-        <span class="section-badge">Get in Touch</span>
+      <div class="section-header">
         <h2 class="section-title">Contact Us</h2>
+        <div class="section-title-underline"></div>
         <p class="section-subtitle">Have questions? We're here to help</p>
       </div>
 
@@ -827,27 +1172,33 @@
             <div class="contact-icon">
               <i class="fas fa-map-marker-alt"></i>
             </div>
-            <h3>Address</h3>
-            <p>Academic City University<br>Accra, Ghana</p>
+            <div>
+              <h4>Address</h4>
+              <p>Academic City University<br>Accra, Ghana</p>
+            </div>
           </div>
 
           <div class="contact-card">
             <div class="contact-icon">
               <i class="fas fa-phone"></i>
             </div>
-            <h3>Phone</h3>
-            <p>
-              <a href="tel:+233208351347">+233 20 835 1347</a><br>
-              <a href="tel:+233249653242">+233 24 965 3242</a>
-            </p>
+            <div>
+              <h4>Phone</h4>
+              <p>
+                <a href="tel:+233208351347">+233 20 835 1347</a><br>
+                <a href="tel:+233249653242">+233 24 965 3242</a>
+              </p>
+            </div>
           </div>
 
           <div class="contact-card">
             <div class="contact-icon">
               <i class="fas fa-envelope"></i>
             </div>
-            <h3>Email</h3>
-            <p><a href="mailto:info@ieeeghicast2026.org">info@ieeeghicast2026.org</a></p>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:info@ieeeghicast2026.org">info@ieeeghicast2026.org</a></p>
+            </div>
           </div>
         </div>
 
@@ -867,9 +1218,9 @@
             <div class="form-group">
               <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
             </div>
-            <button type="submit" class="btn-primary large">
+            <button type="submit" class="btn-submit">
               <i class="fas fa-paper-plane"></i>
-              <span>Send Message</span>
+              Send Message
             </button>
           </form>
         </div>
@@ -883,43 +1234,46 @@
       <div class="footer-grid">
         <div class="footer-col">
           <div class="footer-logo">
-            <img src="images/logo/logo.jpg" alt="ICAST Logo">
+            <img src="./images/logo/logo.jpg" alt="ICAST Logo">
           </div>
-          <p>IEEE ICAST 2026 brings together researchers, innovators, and industry leaders to explore the latest advancements in science and technology.</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#topics">Call for Papers</a></li>
-            <li><a href="#submission">Submission</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Resources</h4>
-          <ul>
-            <li><a href="committee.html">Committees</a></li>
-            <li><a href="workshop.html">Workshop</a></li>
-            <li><a href="doctoral-consortium.html">Doctoral Consortium</a></li>
-            <li><a href="./register.php">Registration</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Connect</h4>
-          <div class="social-links">
+          <p class="footer-about">IEEE ICAST 2026 brings together researchers, innovators, and industry leaders to explore the latest advancements in science and technology.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
-          <p class="footer-contact">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:info@ieeeghicast2026.org">info@ieeeghicast2026.org</a>
-          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#schedules">Schedules</a>
+            <a href="#speakers">Speakers</a>
+            <a href="#pricing">Pricing</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Resources</h4>
+          <div class="footer-links">
+            <a href="committee.html">Committees</a>
+            <a href="workshop.html">Workshop</a>
+            <a href="doctoral-consortium.html">Doctoral Consortium</a>
+            <a href="./register.php">Registration</a>
+            <a href="#submission">Paper Submission</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Contact Info</h4>
+          <div class="footer-links">
+            <a href="mailto:info@ieeeghicast2026.org"><i class="fas fa-envelope"></i> info@ieeeghicast2026.org</a>
+            <a href="tel:+233208351347"><i class="fas fa-phone"></i> +233 20 835 1347</a>
+            <a href="#venue"><i class="fas fa-map-marker-alt"></i> Academic City University, Accra</a>
+          </div>
         </div>
       </div>
 
@@ -932,13 +1286,10 @@
 
   <!-- Back to Top Button -->
   <button id="backToTop" class="back-to-top" aria-label="Back to top">
-    <i class="fas fa-arrow-up"></i>
+    <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- AOS Animation Library -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
   <!-- Custom JavaScript -->
-  <script src="./js/modern-script.js"></script>
+  <script src="./js/grand-script.js"></script>
 </body>
 </html>
