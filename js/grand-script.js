@@ -147,8 +147,8 @@ function initCountdown() {
   const minutesEl = document.getElementById('minutes');
   const secondsEl = document.getElementById('seconds');
 
-  // Conference date: October 24, 2026
-  const conferenceDate = new Date('October 24, 2026 09:00:00').getTime();
+  // Conference date: October 22, 2026
+  const conferenceDate = new Date('October 22, 2026 09:00:00').getTime();
 
   function updateCountdown() {
     const now = new Date().getTime();
@@ -188,11 +188,11 @@ function initCountdown() {
 VERSION:2.0
 PRODID:-//ICAST 2026//EN
 BEGIN:VEVENT
-DTSTART:20261024T090000
-DTEND:20261026T170000
+DTSTART:20261022T090000
+DTEND:20261024T170000
 SUMMARY:IEEE ICAST 2026 Conference
-DESCRIPTION:11th International Conference on Adaptive Science & Technology at Academic City University, Accra, Ghana
-LOCATION:Academic City University, Accra, Ghana
+DESCRIPTION:11th International Conference on Adaptive Science & Technology at Academic City University, Haatso, Accra, Ghana. Theme: Engineering resilient future through convergent technologies.
+LOCATION:Academic City University, Haatso, Accra, Ghana
 END:VEVENT
 END:VCALENDAR`;
 

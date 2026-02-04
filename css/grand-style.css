@@ -128,28 +128,17 @@ h1, h2, h3, h4, h5, h6 {
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
-.nav-brand-icon {
-  width: 40px;
-  height: 40px;
+.nav-brand a {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.nav-brand-icon i {
-  font-size: 30px;
-  color: var(--primary-color);
-}
-
-.nav-brand-text {
-  font-family: var(--font-primary);
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--primary-color);
-  letter-spacing: 2px;
+.nav-logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-menu {
@@ -301,6 +290,16 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 5px;
   margin-bottom: 30px;
   line-height: 1.2;
+}
+
+.hero-theme {
+  font-family: var(--font-secondary);
+  font-size: 20px;
+  font-style: italic;
+  color: var(--white);
+  margin-bottom: 30px;
+  opacity: 0.95;
+  font-weight: 500;
 }
 
 .hero-buttons {
@@ -1641,7 +1640,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .topics-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
@@ -1702,6 +1701,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 6px;
   background: var(--primary-color);
   border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+  .topics-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 992px) {
