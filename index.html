@@ -1007,68 +1007,101 @@
         <p class="section-subtitle">Choose the registration package that suits you best</p>
       </div>
 
-      <div class="pricing-grid">
+      <div class="pricing-grid pricing-two-col">
         <div class="pricing-card">
           <div class="pricing-header">
-            <h3 class="pricing-type">Student</h3>
-            <div class="pricing-amount"><span>$</span>150</div>
-            <p class="pricing-period">IEEE Member</p>
+            <h3 class="pricing-type">Early Registration</h3>
+            <p class="pricing-period">Up to 1<sup>st</sup> of June 2026</p>
           </div>
           <ul class="pricing-features">
-            <li>Conference Access (3 Days)</li>
-            <li>All Paper Sessions</li>
-            <li>Workshop Participation</li>
-            <li>Certificate of Attendance</li>
-            <li>Lunch & Refreshments</li>
-            <li>Conference Materials</li>
+            <li><i class="fas fa-check"></i> IEEE Member - <strong>$130 USD</strong></li>
+            <li><i class="fas fa-check"></i> Non-IEEE Member - <strong>$200 USD</strong></li>
+            <li><i class="fas fa-check"></i> IEEE Student Member - <strong>$70 USD</strong></li>
+            <li><i class="fas fa-check"></i> Student Non-IEEE Member - <strong>$100 USD</strong></li>
           </ul>
           <div class="pricing-footer">
-            <a href="./register.php" class="btn-pricing">Register Now</a>
-          </div>
-        </div>
-
-        <div class="pricing-card featured">
-          <div class="pricing-header">
-            <h3 class="pricing-type">Professional</h3>
-            <div class="pricing-amount"><span>$</span>350</div>
-            <p class="pricing-period">IEEE Member</p>
-          </div>
-          <ul class="pricing-features">
-            <li>Conference Access (3 Days)</li>
-            <li>All Paper Sessions</li>
-            <li>Workshop Participation</li>
-            <li>Certificate of Attendance</li>
-            <li>Lunch & Refreshments</li>
-            <li>Conference Materials</li>
-            <li>Networking Dinner</li>
-            <li>Up to 3 Paper Submissions</li>
-          </ul>
-          <div class="pricing-footer">
-            <a href="./register.php" class="btn-pricing">Register Now</a>
+            <button class="btn-pricing" onclick="openPaymentModal()">Register Early</button>
           </div>
         </div>
 
         <div class="pricing-card">
           <div class="pricing-header">
-            <h3 class="pricing-type">Non-Member</h3>
-            <div class="pricing-amount"><span>$</span>450</div>
-            <p class="pricing-period">Regular Rate</p>
+            <h3 class="pricing-type">Late Registration</h3>
+            <p class="pricing-period">From 2<sup>nd</sup> of June 2026</p>
           </div>
           <ul class="pricing-features">
-            <li>Conference Access (3 Days)</li>
-            <li>All Paper Sessions</li>
-            <li>Workshop Participation</li>
-            <li>Certificate of Attendance</li>
-            <li>Lunch & Refreshments</li>
-            <li>Conference Materials</li>
+            <li><i class="fas fa-check"></i> IEEE Member - <strong>$200 USD</strong></li>
+            <li><i class="fas fa-check"></i> Non-IEEE Member - <strong>$285 USD</strong></li>
+            <li><i class="fas fa-check"></i> IEEE Student Member - <strong>$100 USD</strong></li>
+            <li><i class="fas fa-check"></i> Student Non-IEEE Member - <strong>$185 USD</strong></li>
           </ul>
           <div class="pricing-footer">
-            <a href="./register.php" class="btn-pricing">Register Now</a>
+            <button class="btn-pricing" onclick="openPaymentModal()">Register Late</button>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Payment Details Modal -->
+  <div class="payment-modal-overlay" id="paymentModal">
+    <div class="payment-modal">
+      <div class="payment-modal-header">
+        <h3>Payment Account Details</h3>
+        <button class="payment-modal-close" id="closePaymentModal">&times;</button>
+      </div>
+
+      <div class="payment-modal-body">
+        <div class="payment-instructions">
+          <p><strong>Payment Instructions:</strong> Please use the following account details to complete your registration payment.</p>
+        </div>
+
+        <div class="bank-details">
+          <h4><i class="fas fa-university"></i> Bank Transfer (USD)</h4>
+          <table class="bank-table">
+            <tr>
+              <td><strong>Bank Name:</strong></td>
+              <td>GCB Bank</td>
+            </tr>
+            <tr>
+              <td><strong>Account Name:</strong></td>
+              <td>UMaT SRID</td>
+            </tr>
+            <tr>
+              <td><strong>Account Number:</strong></td>
+              <td>4051130003631</td>
+            </tr>
+            <tr>
+              <td><strong>Swift Code:</strong></td>
+              <td>GHCBGHAC</td>
+            </tr>
+            <tr>
+              <td><strong>Bank Code:</strong></td>
+              <td>040</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="payment-notes">
+          <h4><i class="fas fa-exclamation-triangle"></i> Important Notes:</h4>
+          <ul>
+            <li>Please include your full name and email address in the payment reference</li>
+            <li>IEEE members must provide valid membership number during registration</li>
+            <li>Students must provide valid student ID for student rates</li>
+            <li>Send payment confirmation to: <a href="mailto:icssid2026@gmail.com"><strong>icssid2026@gmail.com</strong></a></li>
+            <li>Registration is confirmed only after payment verification</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="payment-modal-footer">
+        <button class="btn-modal-close" onclick="closePaymentModalFn()">Close</button>
+        <button class="btn-modal-copy" id="copyBankDetails">
+          <i class="fas fa-copy"></i> Copy Account Details
+        </button>
+      </div>
+    </div>
+  </div>
 
   <!-- Sponsors Section -->
   <section id="sponsors" class="sponsors-section">

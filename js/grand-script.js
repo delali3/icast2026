@@ -418,6 +418,83 @@ function initFormValidation() {
 document.addEventListener('DOMContentLoaded', initFormValidation);
 
 /**
+ * Payment Modal
+ */
+function openPaymentModal() {
+  const modal = document.getElementById('paymentModal');
+  if (modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closePaymentModalFn() {
+  const modal = document.getElementById('paymentModal');
+  if (modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('paymentModal');
+  const closeBtn = document.getElementById('closePaymentModal');
+  const copyBtn = document.getElementById('copyBankDetails');
+
+  // Close modal via close button
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closePaymentModalFn);
+  }
+
+  // Close modal when clicking overlay background
+  if (modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closePaymentModalFn();
+      }
+    });
+  }
+
+  // Copy bank details to clipboard
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function() {
+      const bankDetails =
+        'Bank: GCB Bank\n' +
+        'Account Name: UMaT SRID\n' +
+        'Account Number: 4051130003631\n' +
+        'Swift Code: GHCBGHAC\n' +
+        'Bank Code: 040';
+
+      navigator.clipboard.writeText(bankDetails).then(function() {
+        copyBtn.textContent = 'Copied!';
+        setTimeout(function() {
+          copyBtn.textContent = 'Copy Account Details';
+        }, 2000);
+      }).catch(function() {
+        // Fallback for older browsers
+        const textarea = document.createElement('textarea');
+        textarea.value = bankDetails;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        copyBtn.textContent = 'Copied!';
+        setTimeout(function() {
+          copyBtn.textContent = 'Copy Account Details';
+        }, 2000);
+      });
+    });
+  }
+
+  // Close modal with Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closePaymentModalFn();
+    }
+  });
+});
+
+/**
  * Utility: Debounce function
  */
 function debounce(func, wait) {
